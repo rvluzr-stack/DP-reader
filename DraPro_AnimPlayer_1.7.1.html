@@ -1,0 +1,393 @@
+<html>
+<head>
+	<title>DraPro Anim Player</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			max-width: 850px;
+		}
+
+		div {
+			margin: 5px;
+		}
+
+		input {
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+
+		button {
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+
+		canvas {
+			border: 1px solid;
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+
+		.dropDiv {
+			border: 2px dashed #ccc;
+			border-radius: 10px;
+			width: 400px;
+			font-family: sans-serif;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		.dropDiv.highlight {
+			border-color: #800080;
+			background-color: #80008017;
+		}
+
+		#fileElem {
+			display: none;
+		}
+
+		#xmlElem {
+			display: none;
+		}
+
+		.buttonFile {
+			display: inline-block;
+			padding: 10px;
+			background: #ccc;
+			cursor: pointer;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+		.buttonFile:hover {
+			background: #ddd;
+		}
+
+		/* Tooltip container */
+		.tooltip {
+			/*position: relative;
+			display: inline-block;*/
+			border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+		}
+
+		/* Tooltip text */
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			max-width: 200px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			padding: 5px;
+			border-radius: 6px;
+
+			/* Position the tooltip text */
+			position: absolute;
+			z-index: 1;
+		}
+
+		/* Show the tooltip text when you mouse over the tooltip container */
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+		}
+
+		.fading {
+			color: red;
+			-webkit-animation: fadeinout 1s linear forwards;
+			animation: fadeinout 1s linear forwards;
+		}
+
+		@-webkit-keyframes fadeinout {
+			0%,100% { opacity: 0; }
+			50% { opacity: 1; }
+		}
+
+		@keyframes fadeinout {
+			0%,100% { opacity: 0; }
+			50% { opacity: 1; }
+		}
+	</style>
+</head>
+<body>
+	<h1 align='center'>Dragon Providence H Scene animation player v1.7.1</h1>
+	<h2 align='center'>by Noli</h2>
+	<div id='animDiv'>
+		<canvas id='animCanvas' width='100' height='100'></canvas>
+	</div>
+	<div>
+		<label>
+			<span class='tooltip' title='If you click the arrow buttons to change this value, the actual framerate may not update until you click somewhere else.'>Framerate: </span>
+			<input id='framerate' type='number' onchange="updateFps()" min=0 max=60 value=16>
+		</label>
+		<span class='tooltip' title='All the animations use those values when played in game.'>Standard framerates: </span>
+		<button type='button' title='Slow' onclick='setFps(16);'>16</button>
+		<button type='button' title='Fast' onclick='setFps(24);'>24</button>
+		<button type='button' title='Sets the fps to 0' onclick='setFps(0);'>Stop</button>
+		<label class='tooltip' title='Some animations have a 1 pixel offset on some frames causing a slight shaking when played.
+Leave this unchecked if you are unsure.'>Fix animation: 
+			<input type='checkbox' id='cbFixAnim'>
+		</label>
+	</div>
+	<div id='info'></div>
+	<div id='cardSelect'>
+		<label>
+			<span class='tooltip' title='If you loaded an XML with card IDs, start typing a name (or rarity, or ID) to find a card, then select the card in the list to put the ID in the field.
+Clear the field to start a new search.
+
+Otherwise, you can type an ID directly.
+Format: TRxxxxx, where:
+	T = Type (1=Beast, 2=God, 3=Demon)
+	R = Rarity (0=N, 1=R, 2=SR, 3=SSR, 4=LR, 5=GR, 6= SGR, 7=SLR)
+	xxxxx = various digits depending on the card
+	The last digit is always 0 except for GR cards where the last 2 digits are 01.
+
+Note: Remember that only SSR and above have scene animations.'>Card ID: </span>
+			<input id='inputCardId' list='cardIDList' type='text'>
+			<datalist name='cardIDList' id='cardIDList'>
+			<!-- Example of IDs that will be added from loading an XML file
+			<option value='1400070'>[LR]Impenitent Sinner Sodom and Gomorrah</option>
+			 -->
+			</datalist>
+		</label>
+		<label class='tooltip' title='All cards have 4 animations, except 1400070 (6 anims), 1790030 (8 anims), 2490270 (3 anims) and 3790060 (6 anims).'>Animation ID: <input id='inputAnimId' type='number' min='1' max='8' value='1'></label>
+		<label>Hires:<input type='checkbox' id='cbHires'></label>
+		<button type='button' onclick='loadById()'>Load animation</button><br>
+		<div class='dropDiv' id='xmlArea'>
+			<p>Load an XML file with ID with the file dialog, or by dragging and dropping the file onto this area.</p>
+			<label class='buttonFile'>Load XML file with card IDs<input type='file' id='xmlElem' accept='.xml' onchange='loadXml(this.files)'></label>
+		</div>
+		<div class='dropDiv' id='loadArea'>
+			<p>Load an animation sheet with the file dialog, or by dragging and dropping the file either onto this area or onto the animation frame.</p>
+			<input type='file' id='fileElem' accept='image/*' onchange='handleFiles(this.files)'>
+			<label class="buttonFile" for="fileElem">Load animation file</label>
+		</div>
+	</div>
+</body>
+
+<script>
+// Global variables
+var animSheet = new Image();
+var currentFrame = 0;
+var numberOfFrames;
+var context2d;
+var fps;
+var animWidth;
+var animHeight;
+var dropArea;
+var idRequest = 0;
+var idTimeout = 0;
+var animeimagePath = "./cdn00.drapro-nutaku.dmmgames.com/static/adv/data/pnovel/animeimage";
+
+window.onload = function() {
+	init();
+}
+
+function init() {
+	fps = document.getElementById('framerate').value;
+
+	// For dropping an XML file
+	let dropArea = document.getElementById('xmlArea');
+	dropArea.addEventListener('dragenter', dropHandlerFunction, false);
+	dropArea.addEventListener('dragleave', dropHandlerFunction, false);
+	dropArea.addEventListener('dragover', dropHandlerFunction, false);
+	dropArea.addEventListener('drop', dropXmlHandler, false);
+	// For dropping animsheet files
+	//	- On the canvas
+	dropArea = document.getElementById('animDiv');
+	dropArea.addEventListener('dragenter', dropHandlerFunction, false);
+	dropArea.addEventListener('dragleave', dropHandlerFunction, false);
+	dropArea.addEventListener('dragover', dropHandlerFunction, false);
+	dropArea.addEventListener('drop', dropHandlerFunction, false);
+	// - On the file selection area
+	dropArea = document.getElementById('loadArea');
+	dropArea.addEventListener('dragenter', dropHandlerFunction, false);
+	dropArea.addEventListener('dragleave', dropHandlerFunction, false);
+	dropArea.addEventListener('dragover', dropHandlerFunction, false);
+	dropArea.addEventListener('drop', dropHandlerFunction, false);
+
+	// Listener when a sheet is loaded
+	animSheet.addEventListener("load", sheetLoaded);
+}
+
+function loadXml(files) {
+	var file = files[0];
+
+	if (file.name.match(/\.xml$/)) {
+		var reader = new FileReader();
+		reader.readAsText(file);
+		reader.onload = function() {
+			var parser = new DOMParser();
+			var xmlDoc = parser.parseFromString(reader.result,"text/html");
+			//
+			var cardListElement = document.getElementById("cardIDList");
+			var htmlToInsert = "";
+			var cardDataList = xmlDoc.getElementsByTagName("CardIDData");
+			for(var indexCard = 0; indexCard < cardDataList.length; indexCard++) {
+				htmlToInsert += "<option value='" + cardDataList[indexCard].getAttribute("CardID") + "'>" + cardDataList[indexCard].getAttribute("CardName") + "</option>";
+			}
+			cardListElement.innerHTML = htmlToInsert;
+			let xmlArea = document.getElementById('xmlArea');
+			let newNode = document.createElement("span");
+			newNode.setAttribute('class', 'fading');
+			newNode.setAttribute('id', 'xmlLoadedFading');
+			newNode.appendChild(document.createTextNode("XML Loaded"));
+			xmlArea.appendChild(newNode);
+			setTimeout( function() {
+				let elemToRemove = document.getElementById('xmlLoadedFading');
+				elemToRemove.parentNode.removeChild(elemToRemove);
+			}, 1000);
+		};
+	} else {
+		let xmlArea = document.getElementById('xmlArea');
+			let newNode = document.createElement("span");
+			newNode.setAttribute('class', 'fading');
+			newNode.setAttribute('id', 'xmlLoadedFading');
+			newNode.appendChild(document.createTextNode("Invalid file"));
+			xmlArea.appendChild(newNode);
+			setTimeout( function() {
+				let elemToRemove = document.getElementById('xmlLoadedFading');
+				elemToRemove.parentNode.removeChild(elemToRemove);
+			}, 1000);
+	}
+}
+
+function dropHandlerFunction(e) {
+	e.preventDefault();
+	e.stopPropagation();
+
+	if(e.type == 'dragover' || e.type == 'dragenter') {
+		e.currentTarget.classList.add('highlight');
+	} else if(e.type == 'dragleave' || e.type == 'drop') {
+		e.currentTarget.classList.remove('highlight');
+	}
+
+	if(e.type == 'drop') {
+		handleFiles(e.dataTransfer.files);
+	}
+}
+
+function dropXmlHandler(e) {
+	e.preventDefault();
+	e.stopPropagation();
+	e.currentTarget.classList.remove('highlight');
+	loadXml(e.dataTransfer.files);
+}
+
+function handleFiles(files) {
+	stopCurrentAnimation();
+
+	// Read the file
+	var reader = new FileReader();
+	reader.readAsDataURL(files[0]);
+	reader.onloadend = function() {
+		animSheet.src = reader.result;
+	}
+}
+
+function getAnimsheetPath(cardId, animId, bHires) {
+	if(cardId != 1400070) {
+		return animeimagePath + "/" + cardId + "/" + cardId + "_mv_" + animId + (bHires ? "_pc" : "") + ".jpg";
+	} else {
+		// Special case for Sodom&G
+		let suffix;
+		let animID2;
+		switch(animId) {
+			case "1":	suffix = "st";	animId2 = 1;			break;
+			case "2": 	suffix = "nd";	animId2 = 2;			break;
+			case "3": 	suffix = "rd";	animId2 = 1;			break;
+			default:	suffix = "th";	animId2 = (animId - 2);	break;
+		}
+		return animeimagePath + "/" + cardId + "a/" + cardId + "ex" + animId + suffix + "_mv_" + animId2 + (bHires ? "_pc" : "") + ".jpg";
+	}
+}
+
+function loadById() {
+	let cardId = document.getElementById('inputCardId').value;
+	let animId = document.getElementById('inputAnimId').value;
+	let bHires = document.getElementById('cbHires').checked;
+	stopCurrentAnimation();
+	animSheet.src = getAnimsheetPath(cardId, animId, bHires);
+}
+
+function stopCurrentAnimation() {
+	// Stop animation
+	if (idTimeout != 0) {
+		clearTimeout(idTimeout);
+		idTimeout = 0;
+	}
+	if (idRequest != 0) {
+		cancelAnimationFrame(idRequest);
+		idRequest = 0;
+	}
+}
+
+function sheetLoaded() {
+	var hires = (animSheet.height===834);
+	animWidth = animSheet.height;
+	animHeight = 640;	// Hires animation
+	if (!hires) {
+		animHeight=320;	// Lowres animation
+	}
+	numberOfFrames = (animSheet.width/animHeight);
+	currentFrame = 0;
+
+	var infoDiv = document.getElementById('info');
+	infoDiv.innerHTML =	"Anim sheet size: " + animSheet.width + "x" + animSheet.height +
+						", Hires: " + hires +
+						", Frame size: " + animWidth + "x" + animHeight +
+						", Frames: " + numberOfFrames;
+
+	var canvasAnim = document.getElementById('animCanvas');
+	canvasAnim.width = animWidth;
+	canvasAnim.height = animHeight;
+	
+	context2d = canvasAnim.getContext('2d');
+	context2d.rotate(-Math.PI/2);
+	context2d.drawImage(animSheet, -animHeight, 0);	// Draw first frame
+
+	requestAnimationFrame(updateAnim);
+}
+
+function setFps(newFps) {
+	document.getElementById('framerate').value = newFps;
+	updateFps();
+}
+
+function updateFps() {
+	var oldFps = fps;
+	fps = document.getElementById('framerate').value;
+
+	if (oldFps == 0 && idTimeout == 0 && idRequest == 0) {
+		requestAnimationFrame(updateAnim);
+	}
+}
+
+function updateAnim(timestamp) {
+	if(fps>0) {
+		idTimeout = setTimeout( function() {
+			idRequest = requestAnimationFrame(updateAnim);
+			currentFrame++;
+			currentFrame = currentFrame % numberOfFrames;
+			if (! document.getElementById("cbFixAnim").checked) {
+				context2d.drawImage(animSheet, -animHeight*(currentFrame+1), 0);
+			} else {
+				if(currentFrame < 15) {
+					context2d.drawImage(animSheet, -animHeight*(currentFrame+1), 0);
+				} else if(currentFrame == 15) {
+					// Draw this frame one line lower (it's missing the top line)
+					context2d.drawImage(animSheet, animHeight*currentFrame-1, 0, animHeight, animWidth, -animHeight-1, 0, animHeight, animWidth);
+				} else {
+					// Draw with an offset of 1 pixel to compensate for the missing line on frame 15
+					context2d.drawImage(animSheet, -animHeight*(currentFrame+1)+1, 0);
+				}
+			}
+		}, 1000/fps);
+	} else {
+		stopCurrentAnimation();
+	}
+}
+
+
+</script>
+
+</html>

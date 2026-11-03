@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CardIDList xmlns="noli">
+<CardIDData CardID="1000010" CardName="[N] Orc"/>
+<CardIDData CardID="1000020" CardName="[N] Ipiria"/>
+<CardIDData CardID="1000030" CardName="[N] Troll"/>
+<CardIDData CardID="1000040" CardName="[N] Worm"/>
+<CardIDData CardID="1000060" CardName="[N] Cockatrice"/>
+<CardIDData CardID="1000070" CardName="[N] Slime"/>
+<CardIDData CardID="1000080" CardName="[N] Rukh"/>
+<CardIDData CardID="1000130" CardName="[N] Mermaid"/>
+<CardIDData CardID="1000140" CardName="[N] Leprechaun"/>
+<CardIDData CardID="1000150" CardName="[N] Sphinx"/>
+<CardIDData CardID="1000160" CardName="[N] Ovinnik"/>
+<CardIDData CardID="1000170" CardName="[N] Snome"/>
+<CardIDData CardID="1000180" CardName="[N] Yowie"/>
+<CardIDData CardID="1000190" CardName="[N] Killer Bee"/>
+<CardIDData CardID="1000210" CardName="[N] Remora"/>
+<CardIDData CardID="1000220" CardName="[N] Biscione"/>
+<CardIDData CardID="1090010" CardName="[N] Sahuagin"/>
+<CardIDData CardID="1090020" CardName="[N] Sprite"/>
+<CardIDData CardID="1100020" CardName="[R] Chimera"/>
+<CardIDData CardID="1100060" CardName="[R] Carbuncle"/>
+<CardIDData CardID="1100070" CardName="[R] Nephilim"/>
+<CardIDData CardID="1100080" CardName="[R] Cyclops"/>
+<CardIDData CardID="1100090" CardName="[R] Hellhound"/>
+<CardIDData CardID="1100100" CardName="[R] Lamia"/>
+<CardIDData CardID="1100110" CardName="[R] Griffon"/>
+<CardIDData CardID="1100120" CardName="[R] Hydra"/>
+<CardIDData CardID="1100130" CardName="[R] Harpy"/>
+<CardIDData CardID="1100140" CardName="[R] Dryad"/>
+<CardIDData CardID="1100150" CardName="[R] Manticore"/>
+<CardIDData CardID="1100160" CardName="[R] Fafnir"/>
+<CardIDData CardID="1100170" CardName="[R] Marut"/>
+<CardIDData CardID="1100180" CardName="[R] Silver Horned King"/>
+<CardIDData CardID="1100190" CardName="[R] Pan"/>
+<CardIDData CardID="1100200" CardName="[R] Minotaur"/>
+<CardIDData CardID="1100210" CardName="[R] Ladon"/>
+<CardIDData CardID="1100220" CardName="[R] Shizuku"/>
+<CardIDData CardID="1100230" CardName="[R] Sylphie"/>
+<CardIDData CardID="1100250" CardName="[R] Dormouse"/>
+<CardIDData CardID="1100260" CardName="[R] Gargoyle"/>
+<CardIDData CardID="1100270" CardName="[R] Tyltyl"/>
+<CardIDData CardID="1100280" CardName="[R] Jafar"/>
+<CardIDData CardID="1100300" CardName="[R] Nereid"/>
+<CardIDData CardID="1100310" CardName="[R] Mytyl"/>
+<CardIDData CardID="1100320" CardName="[R] Siren"/>
+<CardIDData CardID="1100330" CardName="[R] Scarecrow"/>
+<CardIDData CardID="1100340" CardName="[R] Strong-maned Pig Zhu Bajie"/>
+<CardIDData CardID="1100350" CardName="[R] Yeti"/>
+<CardIDData CardID="1100360" CardName="[R] Golden Horned King"/>
+<CardIDData CardID="1100370" CardName="[R] Golem"/>
+<CardIDData CardID="1100380" CardName="[R] March Hare"/>
+<CardIDData CardID="1100390" CardName="[R] Kodama"/>
+<CardIDData CardID="1100400" CardName="[R] Callisto"/>
+<CardIDData CardID="1100410" CardName="[R] Red Pawn"/>
+<CardIDData CardID="1100420" CardName="[R] Sionna"/>
+<CardIDData CardID="1100440" CardName="[R] Jyube Kakei"/>
+<CardIDData CardID="1100450" CardName="[R] Quetzalpetlatl"/>
+<CardIDData CardID="1100460" CardName="[R] High School Swordsman Course Pan"/>
+<CardIDData CardID="1100470" CardName="[R] White Pawn"/>
+<CardIDData CardID="1100480" CardName="[R] Bambi"/>
+<CardIDData CardID="1100490" CardName="[R] Red Cap"/>
+<CardIDData CardID="1100500" CardName="[R] Kappa"/>
+<CardIDData CardID="1100510" CardName="[R] Arcana Star Ipiria"/>
+<CardIDData CardID="1100530" CardName="[R] Silky"/>
+<CardIDData CardID="1100540" CardName="[R] Hrymr"/>
+<CardIDData CardID="1100550" CardName="[R] Yule Goat"/>
+<CardIDData CardID="1100560" CardName="[R] Gerd"/>
+<CardIDData CardID="1100570" CardName="[R] Eurytion"/>
+<CardIDData CardID="1100580" CardName="[R] Kasha"/>
+<CardIDData CardID="1100590" CardName="[R] Altena"/>
+<CardIDData CardID="1100600" CardName="[R] Eilene"/>
+<CardIDData CardID="1100650" CardName="[R] Sibuxiang"/>
+<CardIDData CardID="1190010" CardName="[R] Kraken"/>
+<CardIDData CardID="1190020" CardName="[R] Basilisk"/>
+<CardIDData CardID="1190030" CardName="[R] Musmahhu"/>
+<CardIDData CardID="1190040" CardName="[R] Brownie"/>
+<CardIDData CardID="1190050" CardName="[R] Meretseger"/>
+<CardIDData CardID="1190060" CardName="[R] Ulfhednar"/>
+<CardIDData CardID="1190070" CardName="[R] Afanc"/>
+<CardIDData CardID="1190090" CardName="[R] Knocker"/>
+<CardIDData CardID="1190110" CardName="[R] Squonk"/>
+<CardIDData CardID="1200010" CardName="[SR] Monstrous Woman Gorgon"/>
+<CardIDData CardID="1200020" CardName="[SR] Jet-Black Wolf Skoll"/>
+<CardIDData CardID="1200030" CardName="[SR] Serpent Queen Echidna"/>
+<CardIDData CardID="1200040" CardName="[SR] Celestial Steed Pegasus"/>
+<CardIDData CardID="1200050" CardName="[SR] Sacred Bird Garuda"/>
+<CardIDData CardID="1200060" CardName="[SR] Black Dragon Nidhogg"/>
+<CardIDData CardID="1200070" CardName="[SR] Sea Wolf Scylla"/>
+<CardIDData CardID="1200080" CardName="[SR] Winged Dragon Wyvern"/>
+<CardIDData CardID="1200090" CardName="[SR] Grand Ocean Beast Sea Serpent"/>
+<CardIDData CardID="1200100" CardName="[SR] Winged Beast Queen Griffon"/>
+<CardIDData CardID="1200110" CardName="[SR] Three-Headed Serpent Hydra"/>
+<CardIDData CardID="1200120" CardName="[SR] Twisted Bird Harpy"/>
+<CardIDData CardID="1200130" CardName="[SR] Sacred Tree Spirit Dryad"/>
+<CardIDData CardID="1200140" CardName="[SR] Christmas Reindeer"/>
+<CardIDData CardID="1200150" CardName="[SR] Man Eating Beast Manticore"/>
+<CardIDData CardID="1200160" CardName="[SR] Eight Headed Serpent Yamata no Orochi"/>
+<CardIDData CardID="1200170" CardName="[SR] Wicked Dragon Fafnir"/>
+<CardIDData CardID="1200180" CardName="[SR] Happy New Year Lion"/>
+<CardIDData CardID="1200190" CardName="[SR] Water Spirit Undine"/>
+<CardIDData CardID="1200200" CardName="[SR] Savage Beast Minotaur"/>
+<CardIDData CardID="1200210" CardName="[SR] Fire Spirit Salamander"/>
+<CardIDData CardID="1200220" CardName="[SR] Wind Spirit Sylph"/>
+<CardIDData CardID="1200230" CardName="[SR] Hundred Headed Dragon Ladon"/>
+<CardIDData CardID="1200240" CardName="[SR] Dance of Harvest Hathor"/>
+<CardIDData CardID="1200250" CardName="[SR] Single-Horned Beast Unicorn"/>
+<CardIDData CardID="1200260" CardName="[SR] Divine Steed Sleipnir"/>
+<CardIDData CardID="1200270" CardName="[SR] Demon Ogre"/>
+<CardIDData CardID="1200280" CardName="[SR] Magical Plant Mandragora"/>
+<CardIDData CardID="1200290" CardName="[SR] Summertime Maiden Garuda"/>
+<CardIDData CardID="1200300" CardName="[SR] Beheading Divinity Hydra"/>
+<CardIDData CardID="1200310" CardName="[SR] Stone Monster Gargoyle"/>
+<CardIDData CardID="1200320" CardName="[SR] Earth Spirit Gnome"/>
+<CardIDData CardID="1200330" CardName="[SR] Twin-Horned Beast Bicorn"/>
+<CardIDData CardID="1200340" CardName="[SR] Arcana Star March Hare"/>
+<CardIDData CardID="1200350" CardName="[SR] Festival Tune Nekomata"/>
+<CardIDData CardID="1200360" CardName="[SR] Kassim the Greedy"/>
+<CardIDData CardID="1200370" CardName="[SR] Original Titan Ymir"/>
+<CardIDData CardID="1200380" CardName="[SR] Feline Star Lynx"/>
+<CardIDData CardID="1200390" CardName="[SR] Maiden Beast Yuan Shao"/>
+<CardIDData CardID="1200400" CardName="[SR] Serpent Cursed Deity Yig"/>
+<CardIDData CardID="1200410" CardName="[SR] Vampire's Play Gorgon"/>
+<CardIDData CardID="1200420" CardName="[SR] Canine Warrior Cu Sith"/>
+<CardIDData CardID="1200430" CardName="[SR] Star Queen Cassiopeia"/>
+<CardIDData CardID="1200440" CardName="[SR] Happy New Year Nekomata"/>
+<CardIDData CardID="1200450" CardName="[SR] Foodie Beast Nidhogg"/>
+<CardIDData CardID="1200460" CardName="[SR] Blue Bird Lapis Lazuli"/>
+<CardIDData CardID="1200480" CardName="[SR] Sea Song Princess Siren"/>
+<CardIDData CardID="1200490" CardName="[SR] Magical Plant Alraune"/>
+<CardIDData CardID="1200500" CardName="[SR] Nihilistic Smile Cheshire Cat"/>
+<CardIDData CardID="1200510" CardName="[SR] Treefolk Ent"/>
+<CardIDData CardID="1200520" CardName="[SR] Dual Face Fairy Rusalii"/>
+<CardIDData CardID="1200530" CardName="[SR] Holy Reindeer Rudolph"/>
+<CardIDData CardID="1200540" CardName="[SR] Winged Zodiac Cygnus"/>
+<CardIDData CardID="1200550" CardName="[SR] June Bride Saint Tannin"/>
+<CardIDData CardID="1200560" CardName="[SR] Snow Monster Yeti"/>
+<CardIDData CardID="1200570" CardName="[SR] Cowardly Lion"/>
+<CardIDData CardID="1200580" CardName="[SR] Giant Rock Warrior Golem"/>
+<CardIDData CardID="1200590" CardName="[SR] Winter Spirit Jack Frost"/>
+<CardIDData CardID="1200600" CardName="[SR] Lovesick Hunter Adonis"/>
+<CardIDData CardID="1200610" CardName="[SR] Demiurge Indra"/>
+<CardIDData CardID="1200620" CardName="[SR] Christmastide Wyvern"/>
+<CardIDData CardID="1200640" CardName="[SR] Phantom Sea Horse Hippocampus"/>
+<CardIDData CardID="1200650" CardName="[SR] All Seer Argus"/>
+<CardIDData CardID="1200660" CardName="[SR] Felines Loyalty Cait Sith"/>
+<CardIDData CardID="1200670" CardName="[SR] Proud Swordsman Ionomikoto"/>
+<CardIDData CardID="1200680" CardName="[SR] Crystal Scaled Dragon Cuelebre"/>
+<CardIDData CardID="1200690" CardName="[SR] Eagle Horse Hippogriff"/>
+<CardIDData CardID="1200700" CardName="[SR] Hare Constellation Lepus"/>
+<CardIDData CardID="1200710" CardName="[SR] Heavenly Serpent Quetzalcoatl"/>
+<CardIDData CardID="1200720" CardName="[SR] School Festival Dryad"/>
+<CardIDData CardID="1200730" CardName="[SR] Mischivous Trickster Gremlin"/>
+<CardIDData CardID="1200740" CardName="[SR] The Wise and Brave Yukimura Sanada"/>
+<CardIDData CardID="1200760" CardName="[SR] House Spirit Kikimora"/>
+<CardIDData CardID="1200770" CardName="[SR] School Festival Korpokkur"/>
+<CardIDData CardID="1200780" CardName="[SR] Summer Maiden March Hare"/>
+<CardIDData CardID="1200790" CardName="[SR] Summer Maiden Nekomata"/>
+<CardIDData CardID="1200800" CardName="[SR] Arcana Star Yamata no Orochi"/>
+<CardIDData CardID="1200810" CardName="[SR] Messenger of the Stars Delphinus"/>
+<CardIDData CardID="1200830" CardName="[SR] Jewel Eyed Dragon Vouivre"/>
+<CardIDData CardID="1200840" CardName="[SR] Magical Temptress Fafnir"/>
+<CardIDData CardID="1200850" CardName="[SR] Pure Virgin Monoceros"/>
+<CardIDData CardID="1200860" CardName="[SR] Hitsuji Illusion Maple"/>
+<CardIDData CardID="1200870" CardName="[SR] Gentle Giant Daidarabocchi"/>
+<CardIDData CardID="1200880" CardName="[SR] Phantom Light Will-O'-Wisp"/>
+<CardIDData CardID="1200890" CardName="[SR] Winged Serpent Lindwurm"/>
+<CardIDData CardID="1200900" CardName="[SR] Red Corruption Beast Dualis"/>
+<CardIDData CardID="1200910" CardName="[SR] The Heinous Wolf Lycaon"/>
+<CardIDData CardID="1200920" CardName="[SR] Sea God Aegir"/>
+<CardIDData CardID="1200930" CardName="[SR] Arcana Star Carbuncle"/>
+<CardIDData CardID="1200950" CardName="[SR] Bawdy Serpent Melusine"/>
+<CardIDData CardID="1200960" CardName="[SR] Guardian of the Bridge Modgud"/>
+<CardIDData CardID="1200970" CardName="[SR] Qiongji of Si-Xiong"/>
+<CardIDData CardID="1200980" CardName="[SR] Thrice Mighty Thrivaldi"/>
+<CardIDData CardID="1200990" CardName="[SR] Creator of the World Demiurge"/>
+<CardIDData CardID="1201000" CardName="[SR] Gluttonous Whirlpool Charybdis"/>
+<CardIDData CardID="1201010" CardName="[SR] Sacred Festival Yukimura Sanada"/>
+<CardIDData CardID="1201020" CardName="[SR] Maiden Beast Zhang Liao the Brave"/>
+<CardIDData CardID="1201030" CardName="[SR] Maiden Beast Guo Jia the Advisor"/>
+<CardIDData CardID="1201040" CardName="[SR] Blessing Hare of Inaba"/>
+<CardIDData CardID="1201060" CardName="[SR] Lotus Apprentice Nezha"/>
+<CardIDData CardID="1201070" CardName="[SR] Fiend Goat Taotie"/>
+<CardIDData CardID="1201080" CardName="[SR] Hundun of the Four Perils"/>
+<CardIDData CardID="1201100" CardName="[SR] Supernatural Feline Adandara"/>
+<CardIDData CardID="1201120" CardName="[SR] Fearsome Three-headed Geryon"/>
+<CardIDData CardID="1201140" CardName="[SR] Harvest Fairy Faun"/>
+<CardIDData CardID="1201150" CardName="[SR] The Ocean Divider Gymir"/>
+<CardIDData CardID="1201160" CardName="[SR] Spiky Lake Monster Glaaki"/>
+<CardIDData CardID="1201190" CardName="[SR] Far-roaming Euryale"/>
+<CardIDData CardID="1290010" CardName="[SR] Great Marine Beast Kraken"/>
+<CardIDData CardID="1290020" CardName="[SR] Serpent Lord Basilisk"/>
+<CardIDData CardID="1290030" CardName="[SR] Tauros of Bounty Audumbla"/>
+<CardIDData CardID="1290040" CardName="[SR] Legendary Musician Orpheus"/>
+<CardIDData CardID="1290050" CardName="[SR] Goldenhorn Zlatorog"/>
+<CardIDData CardID="1290080" CardName="[SR] Sweet Party Girl Cuelebre"/>
+<CardIDData CardID="1290100" CardName="[SR] Four Perils Tiger Tao Wu"/>
+<CardIDData CardID="1290120" CardName="[SR] Goblin Cat Nekomata"/>
+<CardIDData CardID="1300010" CardName="[SSR] Flame Beast Ifrit"/>
+<CardIDData CardID="1300020" CardName="[SSR] Earth Mother Goddess Tiamat"/>
+<CardIDData CardID="1300030" CardName="[SSR] Sea Empress Leviathan"/>
+<CardIDData CardID="1300040" CardName="[SSR] Immortal Bird Phoenix"/>
+<CardIDData CardID="1300050" CardName="[SSR] Demon Beast Jabberwock"/>
+<CardIDData CardID="1300060" CardName="[SSR] Christmas Noel Dragon"/>
+<CardIDData CardID="1300070" CardName="[SSR] Happy New Year Hi no Kagu-tsuchi"/>
+<CardIDData CardID="1300080" CardName="[SSR] Destruction Deity Shiva"/>
+<CardIDData CardID="1300090" CardName="[SSR] Midgard Serpent Jormungand"/>
+<CardIDData CardID="1300100" CardName="[SSR] Ancient Dragon"/>
+<CardIDData CardID="1300110" CardName="[SSR] Dragon Emperor Bahamut"/>
+<CardIDData CardID="1300120" CardName="[SSR] Pero Beast Yingliu"/>
+<CardIDData CardID="1300130" CardName="[SSR] Evil Wind Deity Lloigor"/>
+<CardIDData CardID="1300140" CardName="[SSR] Hades Guard Dog Cerberus"/>
+<CardIDData CardID="1300150" CardName="[SSR] Ill Luck Beast Behemoth"/>
+<CardIDData CardID="1300160" CardName="[SSR] Fairy Queen Titania"/>
+<CardIDData CardID="1300170" CardName="[SSR] Deep Sea Deity Dagon"/>
+<CardIDData CardID="1300180" CardName="[SSR] Girl of the Woods Red Riding Hood"/>
+<CardIDData CardID="1300190" CardName="[SSR] Guardian of the East Qing Long"/>
+<CardIDData CardID="1300200" CardName="[SSR] Ice-Wolf Fenrir"/>
+<CardIDData CardID="1300210" CardName="[SSR] Canine Beast Orthrus"/>
+<CardIDData CardID="1300220" CardName="[SSR] Guardian of the West Bai Hu"/>
+<CardIDData CardID="1300230" CardName="[SSR] Harmonious Drake Absolute Dragon"/>
+<CardIDData CardID="1300240" CardName="[SSR] Divine Evil Zhar"/>
+<CardIDData CardID="1300250" CardName="[SSR] Earth Born Tribe Gigas"/>
+<CardIDData CardID="1300260" CardName="[SSR] Alice from Wonderland"/>
+<CardIDData CardID="1300270" CardName="[SSR] Witch's Play Jormungand"/>
+<CardIDData CardID="1300280" CardName="[SSR] Fairy King Oberon"/>
+<CardIDData CardID="1300290" CardName="[SSR] Summertime Maiden Cerberus"/>
+<CardIDData CardID="1300300" CardName="[SSR] Festival Tune Ancient Dragon"/>
+<CardIDData CardID="1300310" CardName="[SSR] Southern Guardian Suzaku"/>
+<CardIDData CardID="1300320" CardName="[SSR] Central Guardian Qilin"/>
+<CardIDData CardID="1300340" CardName="[SSR] Maiden Beast Zhou Yu"/>
+<CardIDData CardID="1300350" CardName="[SSR] Wind Walker Ithaqua"/>
+<CardIDData CardID="1300360" CardName="[SSR] The Unspeakable One Hastur"/>
+<CardIDData CardID="1300370" CardName="[SSR] Tick Tock Clock White Rabbit"/>
+<CardIDData CardID="1300380" CardName="[SSR] Arcana Star Red Riding Hood"/>
+<CardIDData CardID="1300390" CardName="[SSR] Happy New Year Bai Hu"/>
+<CardIDData CardID="1300400" CardName="[SSR] Northern Guardian Xuan Wu"/>
+<CardIDData CardID="1300410" CardName="[SSR] Offeror of Sorrow Angrboða"/>
+<CardIDData CardID="1300420" CardName="[SSR] Swarthy One Surtr"/>
+<CardIDData CardID="1300430" CardName="[SSR] Spring Mirage Cherry Blossom Dragon"/>
+<CardIDData CardID="1300440" CardName="[SSR] Flaming Serpent King Typhon"/>
+<CardIDData CardID="1300450" CardName="[SSR] Infinate Serpent Ouroboros"/>
+<CardIDData CardID="1300460" CardName="[SSR] Crazed Warrior Berserk"/>
+<CardIDData CardID="1300470" CardName="[SSR] Dragon Blood Hero Siegfried"/>
+<CardIDData CardID="1300480" CardName="[SSR] Holy Night Drake Saint Dragon"/>
+<CardIDData CardID="1300490" CardName="[SSR] School Festival Kerberos"/>
+<CardIDData CardID="1300500" CardName="[SSR] Beast of the East Bai Ze"/>
+<CardIDData CardID="1300510" CardName="[SSR] Frost Giant Fornjot"/>
+<CardIDData CardID="1300520" CardName="[SSR] Black Dragon Zirnitra"/>
+<CardIDData CardID="1300530" CardName="[SSR] Half Apparition Nekomusume"/>
+<CardIDData CardID="1300540" CardName="[SSR] Ancient Fox Tenko"/>
+<CardIDData CardID="1300560" CardName="[SSR] Summer Maiden Oberon"/>
+<CardIDData CardID="1300570" CardName="[SSR] Arcana Star Jabberwock"/>
+<CardIDData CardID="1300580" CardName="[SSR] Summer Maiden Zhar"/>
+<CardIDData CardID="1300600" CardName="[SSR] Arcana Star Ladon"/>
+<CardIDData CardID="1300610" CardName="[SSR] Little Match Girl Anne"/>
+<CardIDData CardID="1300620" CardName="[SSR] Red Corruption Beast Caroline"/>
+<CardIDData CardID="1300630" CardName="[SSR] Summer Maiden Jormungand"/>
+<CardIDData CardID="1300650" CardName="[SSR] Festival Beats Titania"/>
+<CardIDData CardID="1300660" CardName="[SSR] Festival Beats Leviathan"/>
+<CardIDData CardID="1300670" CardName="[SSR] Headless Horseman Dullahan"/>
+<CardIDData CardID="1300680" CardName="[SSR] Great Aparrition Nurarihyon"/>
+<CardIDData CardID="1300690" CardName="[SSR] Raging Water Dragon Kuzuryu"/>
+<CardIDData CardID="1300700" CardName="[SSR] Moon Snatcher Managarmr"/>
+<CardIDData CardID="1300710" CardName="[SSR] Pirate Game Behemoth"/>
+<CardIDData CardID="1300720" CardName="[SSR] Infernal Goddess Furies"/>
+<CardIDData CardID="1300730" CardName="[SSR] High School Swordsman Course Griffin"/>
+<CardIDData CardID="1300740" CardName="[SSR] Wand of Hope Digia"/>
+<CardIDData CardID="1300750" CardName="[SSR] Sacred Festival Tiamat"/>
+<CardIDData CardID="1300760" CardName="[SSR] Christmas Festival Siren"/>
+<CardIDData CardID="1300770" CardName="[SSR] Sacred Festival Ifrit"/>
+<CardIDData CardID="1300780" CardName="[SSR] Great Fox God Inarinokami"/>
+<CardIDData CardID="1300790" CardName="[SSR] Maiden Beast Dong Bai"/>
+<CardIDData CardID="1300800" CardName="[SSR] Spring's Greetings Quetzalcoatl"/>
+<CardIDData CardID="1300810" CardName="[SSR] The Wise One Mímir"/>
+<CardIDData CardID="1300820" CardName="[SSR] Beauteous Prince Eduard"/>
+<CardIDData CardID="1300830" CardName="[SSR] Grail of Fulfillment Ladon"/>
+<CardIDData CardID="1300840" CardName="[SSR] Dark Dragon Li Ling"/>
+<CardIDData CardID="1300850" CardName="[SSR] Halloween Zhar"/>
+<CardIDData CardID="1300860" CardName="[SSR] Halloween White Rabbit"/>
+<CardIDData CardID="1300870" CardName="[SSR] Koga Ninja Sarutobi Sasuke"/>
+<CardIDData CardID="1300880" CardName="[SSR] Shining Rooster Víðópnir"/>
+<CardIDData CardID="1300890" CardName="[SSR] Three Millenia Fox Kuuko"/>
+<CardIDData CardID="1300900" CardName="[SSR] Sword of Distress Dolor"/>
+<CardIDData CardID="1300910" CardName="[SSR] Mind Seeker Satori"/>
+<CardIDData CardID="1300920" CardName="[SSR] Summer Maiden Nurarihyon"/>
+<CardIDData CardID="1300930" CardName="[SSR] Summer Maiden Nezha"/>
+<CardIDData CardID="1300960" CardName="[SSR] Summer Maiden Lepus"/>
+<CardIDData CardID="1300970" CardName="[SSR] Summer Maiden Monoceros"/>
+<CardIDData CardID="1300980" CardName="[SSR] 808 Raccoons Inugamigyobu"/>
+<CardIDData CardID="1300990" CardName="[SSR] Norse Wings Hræsvelgr"/>
+<CardIDData CardID="1301000" CardName="[SSR] Hall of Souls Valhalla"/>
+<CardIDData CardID="1301010" CardName="[SSR] The Swift Footed Hero Achilles"/>
+<CardIDData CardID="1301030" CardName="[SSR] The Crowing Cockerel Gullinkambi"/>
+<CardIDData CardID="1301040" CardName="[SSR] Dragon Empress Bahamut Omega"/>
+<CardIDData CardID="1301080" CardName="[SSR] Guardian of Harvest Yule Tomte"/>
+<CardIDData CardID="1390010" CardName="[SSR] Blooming Beauty Narcissus"/>
+<CardIDData CardID="1390030" CardName="[SSR] Guardian Sword Rio"/>
+<CardIDData CardID="1390040" CardName="[SSR] Red Corruption Beast Szakya"/>
+<CardIDData CardID="1390060" CardName="[SSR] Grail of Happiness Felici"/>
+<CardIDData CardID="1390070" CardName="[SSR] Season's Greetings Rusalii"/>
+<CardIDData CardID="1390080" CardName="[SSR] Magic staff of Nova Speed Rapidly"/>
+<CardIDData CardID="1390100" CardName="[SSR] Star of Passion Chalice Barney"/>
+<CardIDData CardID="1390110" CardName="[SSR] Mead Goat Heithrun"/>
+<CardIDData CardID="1390120" CardName="[SSR] Transforming Nymph Circe"/>
+<CardIDData CardID="1390130" CardName="[SSR] Warrior Giant Hrungnir"/>
+<CardIDData CardID="1390150" CardName="[SSR] The Monster of Solitary Gyuki"/>
+<CardIDData CardID="1390160" CardName="[SSR] Wind Witherer Vedfolnir"/>
+<CardIDData CardID="1390170" CardName="[SSR] Nova Star of Fallen Sword Abory"/>
+<CardIDData CardID="1390180" CardName="[SSR] Stone Giant Ullikummi"/>
+<CardIDData CardID="1390200" CardName="[SSR] Nova Star of Mellow Staff Roynsonette"/>
+<CardIDData CardID="1390210" CardName="[SSR] The Fairest Elf Alfr"/>
+<CardIDData CardID="1390220" CardName="[SSR] Great Passion Vampire Red CapΩ"/>
+<CardIDData CardID="1400010" CardName="[LR] Holy Dragon"/>
+<CardIDData CardID="1400020" CardName="[LR] Master of Heavens Shenlong"/>
+<CardIDData CardID="1400030" CardName="[LR] Yggdrasil"/>
+<CardIDData CardID="1400040" CardName="[LR] Blessful Chaos Pandora"/>
+<CardIDData CardID="1400050" CardName="[LR] Ulitimate Divinity Ancient Dragon"/>
+<CardIDData CardID="1400060" CardName="[LR] Saint of the Ark Noah"/>
+<CardIDData CardID="1400070" CardName="[LR] Impenitent Sinner Sodom and Gomorrah"/>
+<CardIDData CardID="1490010" CardName="[LR] Guardian of the Lake Viviane"/>
+<CardIDData CardID="1490020" CardName="[LR] Ruler of Demons Solomon"/>
+<CardIDData CardID="1490030" CardName="[LR] FM Battle Dragon Chariot"/>
+<CardIDData CardID="1490040" CardName="[LR] FM Celestial Dragon Sirius"/>
+<CardIDData CardID="1490060" CardName="[LR] Divine Kingdom Babylon"/>
+<CardIDData CardID="1490070" CardName="[LR] The Revelator Therion"/>
+<CardIDData CardID="1490080" CardName="[LR] FM Mastery Dragon Temperance"/>
+<CardIDData CardID="1490090" CardName="[LR] FM Judge Dragon Judgement"/>
+<CardIDData CardID="1490100" CardName="[LR] Ancestor of Dragons Ancient Dragon Omega"/>
+<CardIDData CardID="1490120" CardName="[LR] FM Lunar Dragon Moon"/>
+<CardIDData CardID="1490130" CardName="[LR] Enchantress of the Witching Hour Princess Takiyasha"/>
+<CardIDData CardID="1490140" CardName="[LR] Holy Hunter Lucia"/>
+<CardIDData CardID="1490190" CardName="[LR] Frost Giant Ymir Omega"/>
+<CardIDData CardID="1490200" CardName="[LR] Blazing Snake of Celebration Typhon"/>
+<CardIDData CardID="1490210" CardName="[LR] Sweet Party Girl Ancient Dragon Omega"/>
+<CardIDData CardID="1490220" CardName="[LR] The Fortunate Isles Elysium"/>
+<CardIDData CardID="1490230" CardName="[LR] Merlin the All-seeing Sage"/>
+<CardIDData CardID="1490240" CardName="[LR] Immortal Sacred Bird Bennu"/>
+<CardIDData CardID="1500001" CardName="[GR] The Goat Capricorn"/>
+<CardIDData CardID="1500101" CardName="[GR] Celestial Ram Aries"/>
+<CardIDData CardID="1500201" CardName="[GR] Formidable Knight Gawain"/>
+<CardIDData CardID="1500301" CardName="[GR] Holy Cavalry Georgios"/>
+<CardIDData CardID="1590001" CardName="[GR] The Lion Zodiac Leo"/>
+<CardIDData CardID="1790010" CardName="[SLR] Child of the Sun Hiruko"/>
+<CardIDData CardID="1790020" CardName="[SLR] Primordial Chaos Tiamat Omega"/>
+<CardIDData CardID="1790030" CardName="[SLR] Fairy Providence Rupy"/>
+<CardIDData CardID="1790050" CardName="[SLR] FM Superior Battle Dragon Chariot"/>
+<CardIDData CardID="1790060" CardName="[SLR] FM Superior Celestial Dragon Sirius"/>
+<CardIDData CardID="1790070" CardName="[SLR] FM Superior Judge Dragon Judgement"/>
+<CardIDData CardID="1790080" CardName="[SLR] FM Superior Mastery Dragon Temperance"/>
+<CardIDData CardID="1790090" CardName="[SLR] FM Superior Lunar Dragon Moon"/>
+<CardIDData CardID="2000020" CardName="[N] Tishtrya"/>
+<CardIDData CardID="2000030" CardName="[N] Aegle"/>
+<CardIDData CardID="2000040" CardName="[N] Nymph"/>
+<CardIDData CardID="2000050" CardName="[N] Fury"/>
+<CardIDData CardID="2000060" CardName="[N] Fire Elemental"/>
+<CardIDData CardID="2000070" CardName="[N] Water Elemental"/>
+<CardIDData CardID="2000080" CardName="[N] Wind Elemental"/>
+<CardIDData CardID="2000090" CardName="[N] Green Angel"/>
+<CardIDData CardID="2000100" CardName="[N] Blue Angel"/>
+<CardIDData CardID="2000110" CardName="[N] Yellow Angel"/>
+<CardIDData CardID="2000120" CardName="[N] Red Angel"/>
+<CardIDData CardID="2000160" CardName="[N] Light Elemental"/>
+<CardIDData CardID="2000170" CardName="[N] Nantur"/>
+<CardIDData CardID="2000180" CardName="[N] Kinnara"/>
+<CardIDData CardID="2000190" CardName="[N] Aeglun"/>
+<CardIDData CardID="2000210" CardName="[N] Manat"/>
+<CardIDData CardID="2000220" CardName="[N] Adjuchas"/>
+<CardIDData CardID="2090010" CardName="[N] St. Elmo"/>
+<CardIDData CardID="2090020" CardName="[N] Astraios"/>
+<CardIDData CardID="2100010" CardName="[R] Juturna"/>
+<CardIDData CardID="2100020" CardName="[R] Scathach"/>
+<CardIDData CardID="2100030" CardName="[R] Lampetia"/>
+<CardIDData CardID="2100040" CardName="[R] Melias"/>
+<CardIDData CardID="2100050" CardName="[R] Phaethusa"/>
+<CardIDData CardID="2100070" CardName="[R] Andraste"/>
+<CardIDData CardID="2100080" CardName="[R] Virtue"/>
+<CardIDData CardID="2100090" CardName="[R] Archangel"/>
+<CardIDData CardID="2100100" CardName="[R] Elf"/>
+<CardIDData CardID="2100110" CardName="[R] Tartarus"/>
+<CardIDData CardID="2100120" CardName="[R] Asteria"/>
+<CardIDData CardID="2100130" CardName="[R] Sin"/>
+<CardIDData CardID="2100140" CardName="[R] Juno"/>
+<CardIDData CardID="2100150" CardName="[R] Nimrod"/>
+<CardIDData CardID="2100160" CardName="[R] Mshussu"/>
+<CardIDData CardID="2100180" CardName="[R] Blade of Kusanagi"/>
+<CardIDData CardID="2100200" CardName="[R] Horus"/>
+<CardIDData CardID="2100210" CardName="[R] Demeter"/>
+<CardIDData CardID="2100220" CardName="[R] Arcana Star Horus"/>
+<CardIDData CardID="2100240" CardName="[R] Ixchel"/>
+<CardIDData CardID="2100260" CardName="[R] Magic Course Teacher Metis"/>
+<CardIDData CardID="2100270" CardName="[R] Anunnaki"/>
+<CardIDData CardID="2100290" CardName="[R] Renenutet"/>
+<CardIDData CardID="2100300" CardName="[R] Nemesis"/>
+<CardIDData CardID="2100310" CardName="[R] Heyoka"/>
+<CardIDData CardID="2100320" CardName="[R] Assistant God Kushiel"/>
+<CardIDData CardID="2100330" CardName="[R] Amenohitohime"/>
+<CardIDData CardID="2100340" CardName="[R] Arcana Star Lethe"/>
+<CardIDData CardID="2100360" CardName="[R] Gulltoppr"/>
+<CardIDData CardID="2100370" CardName="[R] Treat"/>
+<CardIDData CardID="2100380" CardName="[R] Asura"/>
+<CardIDData CardID="2100390" CardName="[R] Leizhenzi"/>
+<CardIDData CardID="2100400" CardName="[R] Morgiana"/>
+<CardIDData CardID="2100420" CardName="[R] Stjärngosse"/>
+<CardIDData CardID="2100430" CardName="[R] Salacia"/>
+<CardIDData CardID="2100440" CardName="[R] Krampus"/>
+<CardIDData CardID="2100480" CardName="[R] Pushpaka"/>
+<CardIDData CardID="2100490" CardName="[R] School Festival Lampetia"/>
+<CardIDData CardID="2100520" CardName="[R] Yule Cat"/>
+<CardIDData CardID="2100570" CardName="[R] Pitharine"/>
+<CardIDData CardID="2100590" CardName="[R] Epimetheus"/>
+<CardIDData CardID="2100600" CardName="[R] High School Magic Course Juturna"/>
+<CardIDData CardID="2100610" CardName="[R] Aratoron"/>
+<CardIDData CardID="2100640" CardName="[R] Trick"/>
+<CardIDData CardID="2100660" CardName="[R] Arcana Star Ra"/>
+<CardIDData CardID="2190020" CardName="[R] Silenus"/>
+<CardIDData CardID="2200010" CardName="[SR] Friendship Deity Mitra"/>
+<CardIDData CardID="2200020" CardName="[SR] Beauty and Grace Deity Idun"/>
+<CardIDData CardID="2200030" CardName="[SR] Sun Deity Belobog"/>
+<CardIDData CardID="2200040" CardName="[SR] Luck at Sea Deity Triton"/>
+<CardIDData CardID="2200050" CardName="[SR] Love Deity Venus"/>
+<CardIDData CardID="2200060" CardName="[SR] Dark Deity Chernobog"/>
+<CardIDData CardID="2200070" CardName="[SR] Ruling Angel Dominion"/>
+<CardIDData CardID="2200080" CardName="[SR] Revenge Deity Morrigan"/>
+<CardIDData CardID="2200090" CardName="[SR] Darkness Deity Tartarus"/>
+<CardIDData CardID="2200100" CardName="[SR] Star Goddess Asteria"/>
+<CardIDData CardID="2200110" CardName="[SR] Lunar Lord Sin"/>
+<CardIDData CardID="2200120" CardName="[SR] Marriage Deity Juno"/>
+<CardIDData CardID="2200140" CardName="[SR] Christmas Holly"/>
+<CardIDData CardID="2200150" CardName="[SR] Destruction Deity Asura"/>
+<CardIDData CardID="2200160" CardName="[SR] Happy New Year Guardian Lion"/>
+<CardIDData CardID="2200170" CardName="[SR] Rainbow Goddess Iris"/>
+<CardIDData CardID="2200180" CardName="[SR] Protection Deity Janus"/>
+<CardIDData CardID="2200190" CardName="[SR] Wild Spirit Orz"/>
+<CardIDData CardID="2200200" CardName="[SR] Earth Deity Rhea"/>
+<CardIDData CardID="2200210" CardName="[SR] Silver haze Deity Vorvados"/>
+<CardIDData CardID="2200220" CardName="[SR] Harvest God Demeter"/>
+<CardIDData CardID="2200230" CardName="[SR] Light Deity Apollo"/>
+<CardIDData CardID="2200250" CardName="[SR] Hunting Deity Diana"/>
+<CardIDData CardID="2200260" CardName="[SR] Vineyard Deity Bacchus"/>
+<CardIDData CardID="2200270" CardName="[SR] Pero Goddess Amagi Iriya"/>
+<CardIDData CardID="2200280" CardName="[SR] Sleep Overseer Deity Hypnos"/>
+<CardIDData CardID="2200290" CardName="[SR] The White Queen Viognier"/>
+<CardIDData CardID="2200300" CardName="[SR] Wrathful Executioner Nemesis"/>
+<CardIDData CardID="2200310" CardName="[SR] Hades Deity Anubis"/>
+<CardIDData CardID="2200320" CardName="[SR] Luck Deity Hermes"/>
+<CardIDData CardID="2200330" CardName="[SR] Merciless Deity Thanatos"/>
+<CardIDData CardID="2200340" CardName="[SR] Lord of the Abyss Nodens"/>
+<CardIDData CardID="2200350" CardName="[SR] Maiden God Brave Ma Chao"/>
+<CardIDData CardID="2200360" CardName="[SR] Hound Guardian Lion"/>
+<CardIDData CardID="2200370" CardName="[SR] June Bride Bouquet"/>
+<CardIDData CardID="2200380" CardName="[SR] Hades King Osiris"/>
+<CardIDData CardID="2200390" CardName="[SR] Star Princess Andromeda"/>
+<CardIDData CardID="2200400" CardName="[SR] June Bride Mitra"/>
+<CardIDData CardID="2200410" CardName="[SR] Slayer of Evil Perseus"/>
+<CardIDData CardID="2200420" CardName="[SR] Summertime Maiden Bacchus"/>
+<CardIDData CardID="2200430" CardName="[SR] Festival Tune Zashikiwarashi"/>
+<CardIDData CardID="2200450" CardName="[SR] Healing Shell Umugihime"/>
+<CardIDData CardID="2200460" CardName="[SR] Lovable Trickster Huehuecoyotl"/>
+<CardIDData CardID="2200480" CardName="[SR] Spider Deity Atlach-Nacha"/>
+<CardIDData CardID="2200490" CardName="[SR] Good Witch of the South Glinda"/>
+<CardIDData CardID="2200500" CardName="[SR] Courageous Warrior Tyr"/>
+<CardIDData CardID="2200510" CardName="[SR] Bull Calf Sun God Marduk"/>
+<CardIDData CardID="2200520" CardName="[SR] Divine Hero Hercules"/>
+<CardIDData CardID="2200530" CardName="[SR] Storehouse Guardian Zashikiwarashi"/>
+<CardIDData CardID="2200550" CardName="[SR] Festival Tune Scathach"/>
+<CardIDData CardID="2200560" CardName="[SR] Shining One Aglaea"/>
+<CardIDData CardID="2200570" CardName="[SR] Mays Falling Star Arcturus"/>
+<CardIDData CardID="2200580" CardName="[SR] Ruler of Riches Alibaba"/>
+<CardIDData CardID="2200590" CardName="[SR] Entwined Snake Asclepius"/>
+<CardIDData CardID="2200600" CardName="[SR] Diety of Goodness Itzamna"/>
+<CardIDData CardID="2200610" CardName="[SR] Glorious Bloom Thalia"/>
+<CardIDData CardID="2200620" CardName="[SR] Half Divine Hero Cuhullin"/>
+<CardIDData CardID="2200640" CardName="[SR] Sacred Song Carol"/>
+<CardIDData CardID="2200650" CardName="[SR] North Wind Boreas"/>
+<CardIDData CardID="2200660" CardName="[SR] Ruling Angel Principalities"/>
+<CardIDData CardID="2200670" CardName="[SR] Elder Mermaid Mare"/>
+<CardIDData CardID="2200680" CardName="[SR] Arcana Star Mitra"/>
+<CardIDData CardID="2200690" CardName="[SR] Swordsman Course Teacher Minerva"/>
+<CardIDData CardID="2200700" CardName="[SR] Dose of Poison Nemain"/>
+<CardIDData CardID="2200710" CardName="[SR] Sun of Womenfolk Macha"/>
+<CardIDData CardID="2200720" CardName="[SR] Goddess of Dawn Eos"/>
+<CardIDData CardID="2200740" CardName="[SR] Ancestor of Wind Stribog"/>
+<CardIDData CardID="2200750" CardName="[SR] Chief Deity Anu"/>
+<CardIDData CardID="2200760" CardName="[SR] Sword of Mo Ye Kou-Tenka"/>
+<CardIDData CardID="2200780" CardName="[SR] Western Anemoi Zephyrus"/>
+<CardIDData CardID="2200790" CardName="[SR] High School Magic Course Izunn"/>
+<CardIDData CardID="2200800" CardName="[SR] Tanabata Cowherd Hikoboshi"/>
+<CardIDData CardID="2200810" CardName="[SR] Sun Goddess Helios"/>
+<CardIDData CardID="2200820" CardName="[SR] Apotropaic Crocodile Sobek"/>
+<CardIDData CardID="2200830" CardName="[SR] The Bestower of Love Goddess Sjofn"/>
+<CardIDData CardID="2200840" CardName="[SR] Southern Wind Notos"/>
+<CardIDData CardID="2200850" CardName="[SR] Investigator Forseti"/>
+<CardIDData CardID="2200860" CardName="[SR] Hitsuji God Syrup"/>
+<CardIDData CardID="2200880" CardName="[SR] Devil Game Nodens"/>
+<CardIDData CardID="2200900" CardName="[SR] Guardian of the Hearth Hestia"/>
+<CardIDData CardID="2200910" CardName="[SR] Justice and Order Dike"/>
+<CardIDData CardID="2200920" CardName="[SR] Goddess of Merriment Euphrosyne"/>
+<CardIDData CardID="2200930" CardName="[SR] Guardian of Bifrost Heimdall"/>
+<CardIDData CardID="2200940" CardName="[SR] Maiden God Jia Xu the Wise"/>
+<CardIDData CardID="2200950" CardName="[SR] Mediator Thoth"/>
+<CardIDData CardID="2200960" CardName="[SR] Horned God Cernunnos"/>
+<CardIDData CardID="2200970" CardName="[SR] God of Harvest Saturnus"/>
+<CardIDData CardID="2200980" CardName="[SR] Spring's Greeting Haurvatat"/>
+<CardIDData CardID="2201010" CardName="[SR] Goddess of the Wild Sea Ran"/>
+<CardIDData CardID="2201030" CardName="[SR] The Deity of Fertility and Love Astghik"/>
+<CardIDData CardID="2201040" CardName="[SR] God of Skill Ogma"/>
+<CardIDData CardID="2201050" CardName="[SR] The Goddess of Freshwater Neptunus"/>
+<CardIDData CardID="2201080" CardName="[SR] Lord of Wealth Kubera"/>
+<CardIDData CardID="2201100" CardName="[SR] The Deity of Wealth Dazhbog"/>
+<CardIDData CardID="2201140" CardName="[SR] Mother of Mountains Ninhursag"/>
+<CardIDData CardID="2201150" CardName="[SR] The Sediment Goddess Lahamu"/>
+<CardIDData CardID="2290010" CardName="[SR] Manannán mac Lir"/>
+<CardIDData CardID="2290020" CardName="[SR] Will of the Sea Ler"/>
+<CardIDData CardID="2290030" CardName="[SR] Seafarming Deity Njord"/>
+<CardIDData CardID="2290040" CardName="[SR] Moon Goddess Selene"/>
+<CardIDData CardID="2290050" CardName="[SR] Governance Goddess Eunomia"/>
+<CardIDData CardID="2290060" CardName="[SR] The Goddess of tear land Molech"/>
+<CardIDData CardID="2290070" CardName="[SR] Goddess of Earth Isle Lahmu"/>
+<CardIDData CardID="2290080" CardName="[SR] Regent of Peace Irene"/>
+<CardIDData CardID="2290090" CardName="[SR] Lord of the Knowledge Mummu"/>
+<CardIDData CardID="2290110" CardName="[SR] Sweet Party Girl Salacia"/>
+<CardIDData CardID="2290130" CardName="[SR] Lord of the Earth Enki"/>
+<CardIDData CardID="2290140" CardName="[SR] Spring Goddess Maia"/>
+<CardIDData CardID="2290150" CardName="[SR] The Deity of Thunder Taranis"/>
+<CardIDData CardID="2300010" CardName="[SSR] Moon Goddess Artemis"/>
+<CardIDData CardID="2300020" CardName="[SSR] Thunder Deity Thor"/>
+<CardIDData CardID="2300030" CardName="[SSR] Dark Queen Pluto"/>
+<CardIDData CardID="2300040" CardName="[SSR] Sex Deity Ishtar"/>
+<CardIDData CardID="2300050" CardName="[SSR] Christmas Nicola"/>
+<CardIDData CardID="2300060" CardName="[SSR] Righteousness Deity Justice"/>
+<CardIDData CardID="2300070" CardName="[SSR] Happy New Year Amaterasu"/>
+<CardIDData CardID="2300080" CardName="[SSR] Silver Limbed Nuada"/>
+<CardIDData CardID="2300090" CardName="[SSR] Shining Deity Baldur"/>
+<CardIDData CardID="2300100" CardName="[SSR] War Goddess Athena"/>
+<CardIDData CardID="2300110" CardName="[SSR] Agriculture Deity Kronos"/>
+<CardIDData CardID="2300120" CardName="[SSR] Sweets and Candy Gretel"/>
+<CardIDData CardID="2300140" CardName="[SSR] Mischief Deity Loki"/>
+<CardIDData CardID="2300150" CardName="[SSR] Battle Lover Anat"/>
+<CardIDData CardID="2300160" CardName="[SSR] Fairy's Play Artemis"/>
+<CardIDData CardID="2300170" CardName="[SSR] Violent Desire Deity Tsathoggua"/>
+<CardIDData CardID="2300180" CardName="[SSR] Battlefield Maiden Valkyrie"/>
+<CardIDData CardID="2300190" CardName="[SSR] Seraph Michael"/>
+<CardIDData CardID="2300200" CardName="[SSR] Hitsuji God Mist"/>
+<CardIDData CardID="2300210" CardName="[SSR] Christmastide Odin"/>
+<CardIDData CardID="2300220" CardName="[SSR] Elder God of Space Kthanid"/>
+<CardIDData CardID="2300230" CardName="[SSR] Spring Goddess Persephone"/>
+<CardIDData CardID="2300240" CardName="[SSR] War Deity Ares"/>
+<CardIDData CardID="2300250" CardName="[SSR] Summertime Maiden Ishtar"/>
+<CardIDData CardID="2300370" CardName="[SSR] Future Destiny Verdandi"/>
+<CardIDData CardID="2300380" CardName="[SSR] Mermaid Princess La Mer"/>
+<CardIDData CardID="2300400" CardName="[SSR] June Bride Holy Bride"/>
+<CardIDData CardID="2300410" CardName="[SSR] Goddess of Heavens Dione"/>
+<CardIDData CardID="2300420" CardName="[SSR] Sword of Vigilance Lanphear"/>
+<CardIDData CardID="2300430" CardName="[SSR] Pilgrimage Monk Tripitaka"/>
+<CardIDData CardID="2300450" CardName="[SSR] Decider of Fate Urd"/>
+<CardIDData CardID="2300460" CardName="[SSR] Holy Night Baldr"/>
+<CardIDData CardID="2300470" CardName="[SSR] Silver Wheel Arianrhod"/>
+<CardIDData CardID="2300480" CardName="[SSR] War Advocate Deity Odin"/>
+<CardIDData CardID="2300490" CardName="[SSR] Maiden God Guang Yu"/>
+<CardIDData CardID="2300500" CardName="[SSR] Magna Mater Cybele"/>
+<CardIDData CardID="2300510" CardName="[SSR] Maiden God Emperor Liu Bei"/>
+<CardIDData CardID="2300520" CardName="[SSR] Festival Tune Thor"/>
+<CardIDData CardID="2300530" CardName="[SSR] Happy New Year Tsukuyomi"/>
+<CardIDData CardID="2300540" CardName="[SSR] Happy New Year Benzaiten"/>
+<CardIDData CardID="2300550" CardName="[SSR] Curious Girl Dorothy"/>
+<CardIDData CardID="2300560" CardName="[SSR] Genie's Master Aladdin"/>
+<CardIDData CardID="2300570" CardName="[SSR] Happy Easter Artemis"/>
+<CardIDData CardID="2300580" CardName="[SSR] Earth Shaker Poseidon"/>
+<CardIDData CardID="2300590" CardName="[SSR] Fertility Goddess Freyja"/>
+<CardIDData CardID="2300600" CardName="[SSR] Cherry Blossom Princess Konohana no Sakuya Hime"/>
+<CardIDData CardID="2300610" CardName="[SSR] Harvest Sunshine Freyr"/>
+<CardIDData CardID="2300620" CardName="[SSR] Dark Harvest Shub-Niggurath"/>
+<CardIDData CardID="2300630" CardName="[SSR] Sovereign of the Sea Oceanus"/>
+<CardIDData CardID="2300640" CardName="[SSR] The Origin of Darkness Nyx"/>
+<CardIDData CardID="2300650" CardName="[SSR] Decider of Fate Skuld"/>
+<CardIDData CardID="2300660" CardName="[SSR] Monkey King. Sun Wukong"/>
+<CardIDData CardID="2300670" CardName="[SSR] Wand of Tenderness Phamura"/>
+<CardIDData CardID="2300680" CardName="[SSR] Ball of Fire Cthugha"/>
+<CardIDData CardID="2300690" CardName="[SSR] Archangel Gabriel"/>
+<CardIDData CardID="2300700" CardName="[SSR] Primordial Darkness Erebus"/>
+<CardIDData CardID="2300710" CardName="[SSR] June Bride Baldr"/>
+<CardIDData CardID="2300720" CardName="[SSR] Summer Maiden Amaterasu"/>
+<CardIDData CardID="2300730" CardName="[SSR] Festive Beats Aglaea"/>
+<CardIDData CardID="2300740" CardName="[SSR] Red Corruption Iratsume"/>
+<CardIDData CardID="2300750" CardName="[SSR] Festival Beats Cthugha"/>
+<CardIDData CardID="2300760" CardName="[SSR] Moonlight Songstress Apollo"/>
+<CardIDData CardID="2300780" CardName="[SSR] Torchof Gods Shapash"/>
+<CardIDData CardID="2300790" CardName="[SSR] Ultimate Beauty Aphrodite"/>
+<CardIDData CardID="2300810" CardName="[SSR] Crimson Angel Camael"/>
+<CardIDData CardID="2300820" CardName="[SSR] Healing Angel Raphael"/>
+<CardIDData CardID="2300830" CardName="[SSR] Night Wolf Games Andromeda"/>
+<CardIDData CardID="2300840" CardName="[SSR] Pumpkin Game Justice"/>
+<CardIDData CardID="2300850" CardName="[SSR] Goddess of Love Eros"/>
+<CardIDData CardID="2300860" CardName="[SSR] Tanabata Maiden Orihime"/>
+<CardIDData CardID="2300870" CardName="[SSR] Premium Confections Hansel"/>
+<CardIDData CardID="2300890" CardName="[SSR] Cat Goddess Bastet"/>
+<CardIDData CardID="2300900" CardName="[SSR] Thunder God Raijin"/>
+<CardIDData CardID="2300910" CardName="[SSR] Angelic Light Lucifer"/>
+<CardIDData CardID="2300920" CardName="[SSR] Christmas Festival Konohanano-Sakuya Hime"/>
+<CardIDData CardID="2300930" CardName="[SSR] Elder Wind Deity Fujin"/>
+<CardIDData CardID="2300940" CardName="[SSR] Maiden Deity Ma Teng"/>
+<CardIDData CardID="2301010" CardName="[SSR] Princess Doll Momohinami"/>
+<CardIDData CardID="2301020" CardName="[SSR] Lord's Glory Haniel"/>
+<CardIDData CardID="2301030" CardName="[SSR] Halloween Sakura Ootoji no Kami"/>
+<CardIDData CardID="2301040" CardName="[SSR] Spring Goddess Sakuraotojinokami"/>
+<CardIDData CardID="2301050" CardName="[SSR] Soother of Seas Amphitrite"/>
+<CardIDData CardID="2301070" CardName="[SSR] Doll Prince Momohinaki"/>
+<CardIDData CardID="2301090" CardName="[SSR] Archangel Uriel"/>
+<CardIDData CardID="2301100" CardName="[SSR] Goddess of Death Hecate"/>
+<CardIDData CardID="2301110" CardName="[SSR] Alice Through the Looking Glass"/>
+<CardIDData CardID="2301120" CardName="[SSR] Ruler of the Underworld Hel"/>
+<CardIDData CardID="2301130" CardName="[SSR] The Savior of Avalon Christina"/>
+<CardIDData CardID="2301140" CardName="[SSR] June Bride Concordia"/>
+<CardIDData CardID="2301150" CardName="[SSR] Summer Maiden Tsukuyomi"/>
+<CardIDData CardID="2301160" CardName="[SSR] Summer Maiden Nuadha"/>
+<CardIDData CardID="2301170" CardName="[SSR] The Deity of Solar Svarog"/>
+<CardIDData CardID="2301180" CardName="[SSR] Summer Maiden Chamael"/>
+<CardIDData CardID="2301210" CardName="[SSR] Hitsuji God Luke"/>
+<CardIDData CardID="2301220" CardName="[SSR] Queen Regnant Scáthach Omega"/>
+<CardIDData CardID="2301230" CardName="[SSR] The Hidden One Amunet"/>
+<CardIDData CardID="2301240" CardName="[SSR] Flame Wielder Agni"/>
+<CardIDData CardID="2301260" CardName="[SSR] Goddess of White Sunlight Shamash"/>
+<CardIDData CardID="2301310" CardName="[SSR] Arcana Star Athena"/>
+<CardIDData CardID="2390010" CardName="[SSR] God Investiture Tai Gong Wang"/>
+<CardIDData CardID="2390020" CardName="[SSR] Wand of Dignity Solemnity"/>
+<CardIDData CardID="2390030" CardName="[SSR] Pentacle of Antic Endern"/>
+<CardIDData CardID="2390040" CardName="[SSR] Sword of Energy Calper"/>
+<CardIDData CardID="2390050" CardName="[SSR] Pentacle of Cheerfulness Frohsinn"/>
+<CardIDData CardID="2390060" CardName="[SSR] God of Sky and Thunder Ukko"/>
+<CardIDData CardID="2390070" CardName="[SSR] New Year Eos"/>
+<CardIDData CardID="2390080" CardName="[SSR] Season's Greetings Ares"/>
+<CardIDData CardID="2390100" CardName="[SSR] Self Born Goddess Brahma"/>
+<CardIDData CardID="2390110" CardName="[SSR] Goddess of Rebirth Dumuzid"/>
+<CardIDData CardID="2390140" CardName="[SSR] Goddess of Rainfall Okaminokami"/>
+<CardIDData CardID="2390150" CardName="[SSR] Nova Star of Wrath Sword Rabia"/>
+<CardIDData CardID="2390170" CardName="[SSR] Sweet Party Girl Hercules"/>
+<CardIDData CardID="2390190" CardName="[SSR] Nova Star of Justice Sword Justicia"/>
+<CardIDData CardID="2390200" CardName="[SSR] The Divine of Strength Kratos"/>
+<CardIDData CardID="2390210" CardName="[SSR] Nova Star of Intelligence Genzlinsch"/>
+<CardIDData CardID="2400010" CardName="[LR] Sky Deity Zeus"/>
+<CardIDData CardID="2400020" CardName="[LR] Saint Nicholas"/>
+<CardIDData CardID="2400030" CardName="[LR] Galactic Ruler Uranos"/>
+<CardIDData CardID="2400040" CardName="[LR] Messenger of God Metatron"/>
+<CardIDData CardID="2400050" CardName="[LR] Mighty Wisdom Ahura Mazda"/>
+<CardIDData CardID="2400060" CardName="[LR] Sacred Festival Thor"/>
+<CardIDData CardID="2400070" CardName="[LR] Creator of Universe Izanagi"/>
+<CardIDData CardID="2400080" CardName="[LR] Angelic Vocalist Sandalphon"/>
+<CardIDData CardID="2400090" CardName="[LR] Divine Savior Jeanne d'Arc"/>
+<CardIDData CardID="2490010" CardName="[LR] Goddess of Merriment Ame-no-Uzume"/>
+<CardIDData CardID="2490020" CardName="[LR] FM Wheel Dragon Fortune"/>
+<CardIDData CardID="2490030" CardName="[LR] Queen of Myths Hera"/>
+<CardIDData CardID="2490040" CardName="[LR] The Savior of Avalon Christina"/>
+<CardIDData CardID="2490050" CardName="[LR] FM Sacred Dragon Hierophant"/>
+<CardIDData CardID="2490060" CardName="[LR] Roaring Thunder Takemikazuchi"/>
+<CardIDData CardID="2490070" CardName="[LR] Eternal Summer Maiden Haniel"/>
+<CardIDData CardID="2490080" CardName="[LR] Eternal Summer Maiden Metatron"/>
+<CardIDData CardID="2490090" CardName="[LR] Eternal Summer Maiden Ahura Mazda"/>
+<CardIDData CardID="2490100" CardName="[LR] Glamerous Bamboo Princess Kaguya"/>
+<CardIDData CardID="2490120" CardName="[LR] World Is Mine Cosmos"/>
+<CardIDData CardID="2490130" CardName="[LR] Lord of Duality Ometeotl"/>
+<CardIDData CardID="2490140" CardName="[LR] Beloved Goddess of Fertility and War Astarte"/>
+<CardIDData CardID="2490150" CardName="[LR] Deity of Zeal Zelus"/>
+<CardIDData CardID="2490160" CardName="[LR] Sacred Night Festival Christina"/>
+<CardIDData CardID="2490180" CardName="[LR] Heavenly Spring Celebrating Zeus"/>
+<CardIDData CardID="2490190" CardName="[LR] Archangel of Virtue Michael Omega"/>
+<CardIDData CardID="2490210" CardName="[LR] FM Power Dragon Strength"/>
+<CardIDData CardID="2490230" CardName="[LR] Beauty of Sun Goddess Sol"/>
+<CardIDData CardID="2490240" CardName="[LR] Titanesses of Fire Prometheus"/>
+<CardIDData CardID="2490260" CardName="[LR] The All-knowing Goddess of Fate Gefjon"/>
+<CardIDData CardID="2490280" CardName="[LR] Archangel of Creation Radueriel"/>
+<CardIDData CardID="2490290" CardName="[LR] Seraphim of Blessing Seraphiel"/>
+<CardIDData CardID="2490300" CardName="[LR] FM Royal Dragon Emperor"/>
+<CardIDData CardID="2490320" CardName="[LR] The Goddess of sky and earth Rhea Ω"/>
+<CardIDData CardID="2490350" CardName="[LR] Aquatic deity of Coves Phorcys"/>
+<CardIDData CardID="2490360" CardName="[LR] Mercy Goddess in Black Leto"/>
+<CardIDData CardID="2500001" CardName="[GR] The Twins Gemini"/>
+<CardIDData CardID="2500101" CardName="[GR] Armor Pilot Arthur"/>
+<CardIDData CardID="2500201" CardName="[GR] Human Horse Sagittarius"/>
+<CardIDData CardID="2500301" CardName="[GR] Astrological Maiden Virgo"/>
+<CardIDData CardID="2590001" CardName="[GR] The Weighing Scale Libra"/>
+<CardIDData CardID="2590201" CardName="[GR] Menacing Warrior Fergus"/>
+<CardIDData CardID="2790010" CardName="[SLR] Heavenly celebrating Hera"/>
+<CardIDData CardID="2790020" CardName="[SLR] God of Fury Warrior Odin Omega"/>
+<CardIDData CardID="2790040" CardName="[SLR] The God of Antinomic Destruction Satanael"/>
+<CardIDData CardID="2790060" CardName="[SLR] FM Superior Wheel Dragon Fortune"/>
+<CardIDData CardID="2790070" CardName="[SLR] FM Superior Sacred Dragon Hierophant"/>
+<CardIDData CardID="2790080" CardName="[SLR] FM Superior Power Dragon Strength"/>
+<CardIDData CardID="2790090" CardName="[SLR] FM Superior Royal Dragon Emperor"/>
+<CardIDData CardID="2790100" CardName="[SLR] Shadow Goddess of the Night Nyx Ω"/>
+<CardIDData CardID="2790110" CardName="[SLR] The Silent Jack-o'-lantern Ω"/>
+<CardIDData CardID="3000010" CardName="[N] Ole Lukoje"/>
+<CardIDData CardID="3000020" CardName="[N] Empusa"/>
+<CardIDData CardID="3000030" CardName="[N] Druj"/>
+<CardIDData CardID="3000040" CardName="[N] Korrigan"/>
+<CardIDData CardID="3000050" CardName="[N] Mummy"/>
+<CardIDData CardID="3000060" CardName="[N] Olivielle"/>
+<CardIDData CardID="3000070" CardName="[N] Jahi"/>
+<CardIDData CardID="3000080" CardName="[N] Evil Eye"/>
+<CardIDData CardID="3000090" CardName="[N] Mossgreen Wraith"/>
+<CardIDData CardID="3000100" CardName="[N] Brown Wraith"/>
+<CardIDData CardID="3000110" CardName="[N] Purple Wraith"/>
+<CardIDData CardID="3000120" CardName="[N] Black Wraith"/>
+<CardIDData CardID="3000130" CardName="[N] Banshee"/>
+<CardIDData CardID="3000140" CardName="[N] Canhur"/>
+<CardIDData CardID="3000150" CardName="[N] Daemon"/>
+<CardIDData CardID="3000160" CardName="[N] Dark Elemental"/>
+<CardIDData CardID="3000170" CardName="[N] Leutschekta"/>
+<CardIDData CardID="3000180" CardName="[N] Ghoul"/>
+<CardIDData CardID="3000190" CardName="[N] Arioch"/>
+<CardIDData CardID="3000210" CardName="[N] Macabre"/>
+<CardIDData CardID="3000230" CardName="[N] Lemures"/>
+<CardIDData CardID="3090010" CardName="[N] Pirate Skull"/>
+<CardIDData CardID="3090020" CardName="[N] Xaphan"/>
+<CardIDData CardID="3100010" CardName="[R] Leanan Sidhe"/>
+<CardIDData CardID="3100030" CardName="[R] Al-Miraj"/>
+<CardIDData CardID="3100060" CardName="[R] Alp"/>
+<CardIDData CardID="3100070" CardName="[R] Lilim"/>
+<CardIDData CardID="3100080" CardName="[R] Succubus"/>
+<CardIDData CardID="3100090" CardName="[R] Nightmare"/>
+<CardIDData CardID="3100100" CardName="[R] Dark Elf"/>
+<CardIDData CardID="3100110" CardName="[R] Astema"/>
+<CardIDData CardID="3100120" CardName="[R] Valefor"/>
+<CardIDData CardID="3100130" CardName="[R] Caim"/>
+<CardIDData CardID="3100140" CardName="[R] Enkidu"/>
+<CardIDData CardID="3100150" CardName="[R] Angra Mainyu"/>
+<CardIDData CardID="3100160" CardName="[R] Card Soldier"/>
+<CardIDData CardID="3100170" CardName="[R] Zahhak"/>
+<CardIDData CardID="3100190" CardName="[R] Orc-neas"/>
+<CardIDData CardID="3100200" CardName="[R] Arcana Star Satyros"/>
+<CardIDData CardID="3100210" CardName="[R] Cal"/>
+<CardIDData CardID="3100220" CardName="[R] Whip"/>
+<CardIDData CardID="3100230" CardName="[R] Girimekhala"/>
+<CardIDData CardID="3100250" CardName="[R] Lorelei"/>
+<CardIDData CardID="3100260" CardName="[R] Baphomet"/>
+<CardIDData CardID="3100270" CardName="[R] Leraje"/>
+<CardIDData CardID="3100280" CardName="[R] Black Bee"/>
+<CardIDData CardID="3100290" CardName="[R] Balor"/>
+<CardIDData CardID="3100300" CardName="[R] Scheherazade"/>
+<CardIDData CardID="3100310" CardName="[R] Pipa Jing"/>
+<CardIDData CardID="3100320" CardName="[R] Kuda-Kitsune"/>
+<CardIDData CardID="3100340" CardName="[R] Gaki"/>
+<CardIDData CardID="3100350" CardName="[R] Vivi"/>
+<CardIDData CardID="3100380" CardName="[R] Tin Man"/>
+<CardIDData CardID="3100390" CardName="[R] Youaltepuztli"/>
+<CardIDData CardID="3100410" CardName="[R] Lady Earthflow"/>
+<CardIDData CardID="3100420" CardName="[R] School Festival Druj"/>
+<CardIDData CardID="3100450" CardName="[R] The Wild Hunt"/>
+<CardIDData CardID="3100460" CardName="[R] Arcana Star Dark Elf"/>
+<CardIDData CardID="3100540" CardName="[R] Jorogumo"/>
+<CardIDData CardID="3100600" CardName="[R] Nephthys"/>
+<CardIDData CardID="3190020" CardName="[R] Mormo"/>
+<CardIDData CardID="3200010" CardName="[SR] Wilderness Demon Azazel"/>
+<CardIDData CardID="3200020" CardName="[SR] Fighting Spirit Demon Kimaris"/>
+<CardIDData CardID="3200030" CardName="[SR] Astrology Demon Decarabia"/>
+<CardIDData CardID="3200040" CardName="[SR] Bloodstained Demon Moloch"/>
+<CardIDData CardID="3200050" CardName="[SR] Hellfire Demon Iblis"/>
+<CardIDData CardID="3200060" CardName="[SR] Peacock Demon Andrealphus"/>
+<CardIDData CardID="3200070" CardName="[SR] Western Demon Paimon"/>
+<CardIDData CardID="3200080" CardName="[SR] Illusionist Demon Samyaza"/>
+<CardIDData CardID="3200090" CardName="[SR] Holy Demon Astema"/>
+<CardIDData CardID="3200100" CardName="[SR] Hell Thief Demon Valefor"/>
+<CardIDData CardID="3200110" CardName="[SR] Thrush President Caim"/>
+<CardIDData CardID="3200120" CardName="[SR] Devil King Ose"/>
+<CardIDData CardID="3200130" CardName="[SR] Christmas Ruprecht"/>
+<CardIDData CardID="3200140" CardName="[SR] Thunder Hail Demon Fleurety"/>
+<CardIDData CardID="3200150" CardName="[SR] Happy New Year Yoko"/>
+<CardIDData CardID="3200160" CardName="[SR] Dragon of Evil Azh dahak"/>
+<CardIDData CardID="3200170" CardName="[SR] Ferryman Charon"/>
+<CardIDData CardID="3200180" CardName="[SR] Shameless Demon Bael"/>
+<CardIDData CardID="3200190" CardName="[SR] Evil Spirit Legion"/>
+<CardIDData CardID="3200200" CardName="[SR] Owl Demon Stolas"/>
+<CardIDData CardID="3200210" CardName="[SR] Rider of Flames Allocer"/>
+<CardIDData CardID="3200230" CardName="[SR] Evil Spirit King Pazuzu"/>
+<CardIDData CardID="3200240" CardName="[SR] Hero King Gilgamesh"/>
+<CardIDData CardID="3200250" CardName="[SR] One-Horned Duchess Amduscias"/>
+<CardIDData CardID="3200260" CardName="[SR] Alluring Temptation Gullveig"/>
+<CardIDData CardID="3200270" CardName="[SR] Astrological Oracle Oriax"/>
+<CardIDData CardID="3200280" CardName="[SR] Demonic Duke Astaroth"/>
+<CardIDData CardID="3200290" CardName="[SR] Absolute Evil Angra Mainyu"/>
+<CardIDData CardID="3200300" CardName="[SR] Watching Demon Grigori"/>
+<CardIDData CardID="3200310" CardName="[SR] Summertime Maiden Leanan Sidhe"/>
+<CardIDData CardID="3200320" CardName="[SR] Seer Lady Virsago"/>
+<CardIDData CardID="3200330" CardName="[SR] June Bride Marriage Blue"/>
+<CardIDData CardID="3200340" CardName="[SR] Magical Archer Leraje"/>
+<CardIDData CardID="3200350" CardName="[SR] Supernatural Guide Familiar"/>
+<CardIDData CardID="3200360" CardName="[SR] Wolf Star Lupus"/>
+<CardIDData CardID="3200370" CardName="[SR] Wicked Witch of the West Catherine"/>
+<CardIDData CardID="3200380" CardName="[SR] Distinguished Duchess Dantalion"/>
+<CardIDData CardID="3200390" CardName="[SR] Demonic Posession Balor"/>
+<CardIDData CardID="3200400" CardName="[SR] Forgotten Evil Ghatanothoa"/>
+<CardIDData CardID="3200410" CardName="[SR] Festival Tune Yuki Onna"/>
+<CardIDData CardID="3200420" CardName="[SR] Punisher of Oaths Orcus"/>
+<CardIDData CardID="3200430" CardName="[SR] Faithful Demon Seere"/>
+<CardIDData CardID="3200440" CardName="[SR] Demon of Truth Purson"/>
+<CardIDData CardID="3200450" CardName="[SR] Black Saint Knecht Ruprecht"/>
+<CardIDData CardID="3200460" CardName="[SR] Maiden Demon Brave Dian Wei"/>
+<CardIDData CardID="3200470" CardName="[SR] Star Hunter Orion"/>
+<CardIDData CardID="3200480" CardName="[SR] Rakshasa Bull Demon King"/>
+<CardIDData CardID="3200490" CardName="[SR] Fashion Forward Mad Hatter"/>
+<CardIDData CardID="3200500" CardName="[SR] Rakshasa Princess Iron Fan"/>
+<CardIDData CardID="3200510" CardName="[SR] Black Priest Baphomet"/>
+<CardIDData CardID="3200520" CardName="[SR] Winged Demon Vapula"/>
+<CardIDData CardID="3200530" CardName="[SR] Arcana Star Rusalka"/>
+<CardIDData CardID="3200540" CardName="[SR] Sweet Magtic Charlotte"/>
+<CardIDData CardID="3200550" CardName="[SR] Queen of Snow Rikka"/>
+<CardIDData CardID="3200560" CardName="[SR] Flowing River Eridanus"/>
+<CardIDData CardID="3200570" CardName="[SR] Water Buffalo Sha Wujing"/>
+<CardIDData CardID="3200580" CardName="[SR] Demonic Temptress Mara"/>
+<CardIDData CardID="3200590" CardName="[SR] Beheading Queen of Hearts"/>
+<CardIDData CardID="3200600" CardName="[SR] Nine Tailed Fox Tamamo-no-Mae"/>
+<CardIDData CardID="3200610" CardName="[SR] Golden Scaled Drake Draco"/>
+<CardIDData CardID="3200620" CardName="[SR] Horse buff Deity Orobas"/>
+<CardIDData CardID="3200630" CardName="[SR] Wish Granter Genie"/>
+<CardIDData CardID="3200640" CardName="[SR] Deceptive Flame Amy"/>
+<CardIDData CardID="3200680" CardName="[SR] Holy Witch Befana"/>
+<CardIDData CardID="3200690" CardName="[SR] Happy New Year Leraje"/>
+<CardIDData CardID="3200700" CardName="[SR] Alchemist Zagan"/>
+<CardIDData CardID="3200710" CardName="[SR] Twin Headed Dragon Valac"/>
+<CardIDData CardID="3200730" CardName="[SR] Gallant Spouse Suzuka Gozen"/>
+<CardIDData CardID="3200740" CardName="[SR] The Red King Pinot Noir"/>
+<CardIDData CardID="3200750" CardName="[SR] High School Swordsman Course Befana"/>
+<CardIDData CardID="3200760" CardName="[SR] Summer Maiden Eridanus"/>
+<CardIDData CardID="3200770" CardName="[SR] Quizical Egg Humpty Dumpty"/>
+<CardIDData CardID="3200780" CardName="[SR] Fox Apparition Yoko"/>
+<CardIDData CardID="3200810" CardName="[SR] Jeweled Beauty Gremory"/>
+<CardIDData CardID="3200820" CardName="[SR] Hitsuji Demon Elphana"/>
+<CardIDData CardID="3200830" CardName="[SR] Flaming Leopard Flauros"/>
+<CardIDData CardID="3200840" CardName="[SR] Ruler of the Sky Rhan Tegoth"/>
+<CardIDData CardID="3200850" CardName="[SR] Witch of the Sea Lido"/>
+<CardIDData CardID="3200870" CardName="[SR] Black Mirror Leopard Tezcatlipoca"/>
+<CardIDData CardID="3200880" CardName="[SR] Snow Bearer Yukionna"/>
+<CardIDData CardID="3200900" CardName="[SR] Sound of Trumpets Murmur"/>
+<CardIDData CardID="3200910" CardName="[SR] Sacred Festival Mastema"/>
+<CardIDData CardID="3200930" CardName="[SR] Mischievous Santa Yule Lads"/>
+<CardIDData CardID="3200950" CardName="[SR] Maiden Demon Ji Ling"/>
+<CardIDData CardID="3200970" CardName="[SR] True Samadhi Fire Spear Kougaiji"/>
+<CardIDData CardID="3200980" CardName="[SR] Arcana Star Tamamonomae"/>
+<CardIDData CardID="3200990" CardName="[SR] Nurse Costume Lupus"/>
+<CardIDData CardID="3201020" CardName="[SR] Sea Chaos Rahab"/>
+<CardIDData CardID="3201030" CardName="[SR] Man Eater Tsuchigumo"/>
+<CardIDData CardID="3201060" CardName="[SR] Great Goddess of Strength Set"/>
+<CardIDData CardID="3201080" CardName="[SR] Pheasant Spirit Jiutou Zhiji Jing"/>
+<CardIDData CardID="3201120" CardName="[SR] Red Corruption Beast Christie"/>
+<CardIDData CardID="3290010" CardName="[SR] Kidnapper Lamashtu"/>
+<CardIDData CardID="3290020" CardName="[SR] Fallen Angel of the Stars Kokabiel"/>
+<CardIDData CardID="3290030" CardName="[SR] Evil Angel Mastema"/>
+<CardIDData CardID="3290100" CardName="[SR] Flaming Sun Demon Adramelech"/>
+<CardIDData CardID="3300010" CardName="[SSR] Supreme Feminine Spirit Barbelo"/>
+<CardIDData CardID="3300020" CardName="[SSR] Bewitching Demon Mephistopheles"/>
+<CardIDData CardID="3300030" CardName="[SSR] Raging Demon Satan"/>
+<CardIDData CardID="3300040" CardName="[SSR] Gluttony Demon Belzebub"/>
+<CardIDData CardID="3300050" CardName="[SSR] Christmas Spinel"/>
+<CardIDData CardID="3300060" CardName="[SSR] Holy Night Mammon"/>
+<CardIDData CardID="3300070" CardName="[SSR] Happy New Year Susa-no-O"/>
+<CardIDData CardID="3300080" CardName="[SSR] Sloth Demon Belphegor"/>
+<CardIDData CardID="3300090" CardName="[SSR] Christmastide Belphegor"/>
+<CardIDData CardID="3300100" CardName="[SSR] Viper Demon Samael"/>
+<CardIDData CardID="3300110" CardName="[SSR] Lust Demon Asmodeus"/>
+<CardIDData CardID="3300120" CardName="[SSR] Robber Demon Andromalius"/>
+<CardIDData CardID="3300130" CardName="[SSR] Jealousy Demon Livyatan"/>
+<CardIDData CardID="3300140" CardName="[SSR] Greed Demon Mammon"/>
+<CardIDData CardID="3300150" CardName="[SSR] Lustful Demon Zepar"/>
+<CardIDData CardID="3300160" CardName="[SSR] Serpent Lance Duke Eligos"/>
+<CardIDData CardID="3300170" CardName="[SSR] Maiden Demon Cao Cao"/>
+<CardIDData CardID="3300180" CardName="[SSR] Treachery Demon Belial"/>
+<CardIDData CardID="3300190" CardName="[SSR] Wandering Light Jack O' Lantern"/>
+<CardIDData CardID="3300200" CardName="[SSR] Marquis of Hell Amon"/>
+<CardIDData CardID="3300210" CardName="[SSR] Happy New Year Samael"/>
+<CardIDData CardID="3300220" CardName="[SSR] Night Witch Lilith"/>
+<CardIDData CardID="3300230" CardName="[SSR] Evil Eye Medusa"/>
+<CardIDData CardID="3300240" CardName="[SSR] Happy Easter Barbelo"/>
+<CardIDData CardID="3300250" CardName="[SSR] Goddess of Spring Persephone"/>
+<CardIDData CardID="3300260" CardName="[SSR] Arrogant Demon Lucifer"/>
+<CardIDData CardID="3300270" CardName="[SSR] Happy Easter Satan"/>
+<CardIDData CardID="3300280" CardName="[SSR] Dark King Hades"/>
+<CardIDData CardID="3300290" CardName="[SSR] The Blazing Demon Sitri"/>
+<CardIDData CardID="3300300" CardName="[SSR] Sailor of the Seven Seas Sinbad"/>
+<CardIDData CardID="3300310" CardName="[SSR] Great Wizard Oz"/>
+<CardIDData CardID="3300320" CardName="[SSR] Murderous Demon Andras"/>
+<CardIDData CardID="3300330" CardName="[SSR] June Bride Black Marriage"/>
+<CardIDData CardID="3300340" CardName="[SSR] Great Mischief Shuten Douji"/>
+<CardIDData CardID="3300350" CardName="[SSR] Gates of the Silver Key Yog-Sothoth"/>
+<CardIDData CardID="3300360" CardName="[SSR] Festival Tune Ose"/>
+<CardIDData CardID="3300370" CardName="[SSR] Deep Sea Deity Cthulhu"/>
+<CardIDData CardID="3300380" CardName="[SSR] Peach Duke Allocer"/>
+<CardIDData CardID="3300390" CardName="[SSR] Summertime Maiden Satan"/>
+<CardIDData CardID="3300400" CardName="[SSR] Avenger of Evil Alastor"/>
+<CardIDData CardID="3300410" CardName="[SSR] Heavenly Sword Susanoo"/>
+<CardIDData CardID="3300420" CardName="[SSR] School Festival Eligos"/>
+<CardIDData CardID="3300430" CardName="[SSR] Holy Demon Gratica"/>
+<CardIDData CardID="3300440" CardName="[SSR] Riding Duke Bathin"/>
+<CardIDData CardID="3300450" CardName="[SSR] Devil's Kitchen Nisroch"/>
+<CardIDData CardID="3300460" CardName="[SSR] Great Lion Marbas"/>
+<CardIDData CardID="3300470" CardName="[SSR] Manipulator Gusion"/>
+<CardIDData CardID="3300480" CardName="[SSR] Great President of Hell Buer"/>
+<CardIDData CardID="3300490" CardName="[SSR] Revealer of Secrets Agaliarept"/>
+<CardIDData CardID="3300500" CardName="[SSR] Marquess of Death Gamigin"/>
+<CardIDData CardID="3300510" CardName="[SSR] Beast Tamer Agares"/>
+<CardIDData CardID="3300520" CardName="[SSR] Demonic Marksman Barbatos"/>
+<CardIDData CardID="3300530" CardName="[SSR] June Bride Ose"/>
+<CardIDData CardID="3300540" CardName="[SSR] Dreaming Vampire Costume Belphegor"/>
+<CardIDData CardID="3300550" CardName="[SSR] High School Magic Course Spinel"/>
+<CardIDData CardID="3300560" CardName="[SSR] Summer Maiden Sinbad"/>
+<CardIDData CardID="3300570" CardName="[SSR] Summer Maiden Mammon"/>
+<CardIDData CardID="3300580" CardName="[SSR] Summer Maiden Charlotte"/>
+<CardIDData CardID="3300590" CardName="[SSR] Enraged Demon Beleth"/>
+<CardIDData CardID="3300600" CardName="[SSR] Insane Evil Aeshma"/>
+<CardIDData CardID="3300610" CardName="[SSR] Conciliator Botis"/>
+<CardIDData CardID="3300620" CardName="[SSR] Red Corruption Zera"/>
+<CardIDData CardID="3300630" CardName="[SSR] Grail of Reverie Phanasia"/>
+<CardIDData CardID="3300640" CardName="[SSR] The Red Queen Chateau Rubellite"/>
+<CardIDData CardID="3300650" CardName="[SSR] Festival Beats Sitri"/>
+<CardIDData CardID="3300660" CardName="[SSR] Festival Beats Angra Mainyu"/>
+<CardIDData CardID="3300670" CardName="[SSR] Festival Beats Rusalka"/>
+<CardIDData CardID="3300680" CardName="[SSR] Blood Thirst Beauty Carmilla"/>
+<CardIDData CardID="3300690" CardName="[SSR] Sense Stealer Shax"/>
+<CardIDData CardID="3300700" CardName="[SSR] Governing Play Agaliarept"/>
+<CardIDData CardID="3300710" CardName="[SSR] Nighttime Treat Game Stolas"/>
+<CardIDData CardID="3300720" CardName="[SSR] King of the Un-Dead Leiche"/>
+<CardIDData CardID="3300730" CardName="[SSR] Wand of Affection Ashave"/>
+<CardIDData CardID="3300740" CardName="[SSR] Nun Costume Lilith"/>
+<CardIDData CardID="3300750" CardName="[SSR] Knight of Hell Furcas"/>
+<CardIDData CardID="3300760" CardName="[SSR] Holy Night Pluto"/>
+<CardIDData CardID="3300770" CardName="[SSR] Enlightened Astronomer Morax"/>
+<CardIDData CardID="3300780" CardName="[SSR] Sacred Festival Gamigin"/>
+<CardIDData CardID="3300790" CardName="[SSR] Dignity Destroyer Raum"/>
+<CardIDData CardID="3300810" CardName="[SSR] Maiden Demon Fearless Cao Cao"/>
+<CardIDData CardID="3300820" CardName="[SSR] Spring's Greetings Buer"/>
+<CardIDData CardID="3300830" CardName="[SSR] Pentacle of Duty Photon"/>
+<CardIDData CardID="3300840" CardName="[SSR] Grail of Acumen Telligenza"/>
+<CardIDData CardID="3300850" CardName="[SSR] Demon Gatherer Bune"/>
+<CardIDData CardID="3300860" CardName="[SSR] Demonic Warrior Marchosias"/>
+<CardIDData CardID="3300870" CardName="[SSR] Halloween Rusalka"/>
+<CardIDData CardID="3300890" CardName="[SSR] Giver of Love Vual"/>
+<CardIDData CardID="3300900" CardName="[SSR] Stimulation of Love Gaap"/>
+<CardIDData CardID="3300910" CardName="[SSR] Alluring Abyss Coronzon"/>
+<CardIDData CardID="3300920" CardName="[SSR] Governor of Hell Lucifuge Rofocale"/>
+<CardIDData CardID="3300930" CardName="[SSR] Pacifistic Demon Saleos"/>
+<CardIDData CardID="3300940" CardName="[SSR] Great Earl Ronove"/>
+<CardIDData CardID="3300950" CardName="[SSR] Arsonist Aim"/>
+<CardIDData CardID="3300960" CardName="[SSR] Pentacle of Aurum Gold"/>
+<CardIDData CardID="3300970" CardName="[SSR] Alchemist Demon Haagenti"/>
+<CardIDData CardID="3300980" CardName="[SSR] Deceiving Demon Berith"/>
+<CardIDData CardID="3301000" CardName="[SSR] Northern Demon Ariton"/>
+<CardIDData CardID="3301010" CardName="[SSR] Gem Demon Bifrons"/>
+<CardIDData CardID="3301020" CardName="[SSR] Dead Goddess of War Peckols"/>
+<CardIDData CardID="3301040" CardName="[SSR] Summer Maiden Nergal"/>
+<CardIDData CardID="3301050" CardName="[SSR] Summer Maiden Meririm"/>
+<CardIDData CardID="3301060" CardName="[SSR] Summer Maiden Zirnitra"/>
+<CardIDData CardID="3301070" CardName="[SSR] Malfas the Architect"/>
+<CardIDData CardID="3301080" CardName="[SSR] Halloween Asag"/>
+<CardIDData CardID="3301090" CardName="[SSR] Costume Play Botis"/>
+<CardIDData CardID="3301100" CardName="[SSR] Witty Demon Ipos"/>
+<CardIDData CardID="3301110" CardName="[SSR] Easterly Demon Oriens"/>
+<CardIDData CardID="3301120" CardName="[SSR] Geometric Water demon Crocell"/>
+<CardIDData CardID="3390010" CardName="[SSR] Castle Artisan Sabnock"/>
+<CardIDData CardID="3390020" CardName="[SSR] Evil Obscenity Baal Omega"/>
+<CardIDData CardID="3390040" CardName="[SSR] Nova Star of Magic staff Ending Dernier"/>
+<CardIDData CardID="3390050" CardName="[SSR] The Necromancer Vine"/>
+<CardIDData CardID="3390060" CardName="[SSR] Great Duke of Wind and Sea Focalor"/>
+<CardIDData CardID="3390070" CardName="[SSR] Spring Celebrating Aghasura"/>
+<CardIDData CardID="3390080" CardName="[SSR] Star of Zest Chalice Passat"/>
+<CardIDData CardID="3390090" CardName="[SSR] Icon of Darkness Apep"/>
+<CardIDData CardID="3390110" CardName="[SSR] Ruler of the Towers Halphas"/>
+<CardIDData CardID="3390130" CardName="[SSR] Nova Star of Peace Jiphyheight"/>
+<CardIDData CardID="3390200" CardName="[SSR] Fire Wings Demon Phoenix"/>
+<CardIDData CardID="3400010" CardName="[LR] Grand Devil Diablos"/>
+<CardIDData CardID="3400020" CardName="[LR] Izanami"/>
+<CardIDData CardID="3400030" CardName="[LR] Witch of Genesis Lilith"/>
+<CardIDData CardID="3400040" CardName="[LR] Eternal Summer Diabolos"/>
+<CardIDData CardID="3400050" CardName="[LR] Magic Torch Jack-O'-Lantern"/>
+<CardIDData CardID="3490010" CardName="[LR] Sacred Festival Ose"/>
+<CardIDData CardID="3490020" CardName="[LR] Far Daemon-sultan Azathoth"/>
+<CardIDData CardID="3490030" CardName="[LR] Fox Spirit Daji"/>
+<CardIDData CardID="3490040" CardName="[LR] Creator of Mankind Nuwa"/>
+<CardIDData CardID="3490050" CardName="[LR] Destructive Spirit Angra Mainyu"/>
+<CardIDData CardID="3490060" CardName="[LR] FM Sloth Dragon Fool"/>
+<CardIDData CardID="3490070" CardName="[LR] FM Hidden Dragon Hermit"/>
+<CardIDData CardID="3490080" CardName="[LR] Great Earl of Hell Furfur"/>
+<CardIDData CardID="3490100" CardName="[LR] Eternal Summer Lilith"/>
+<CardIDData CardID="3490110" CardName="[LR] Eternal Summer Mordred"/>
+<CardIDData CardID="3490120" CardName="[LR] President of Bloodshed Glasya-Labolas"/>
+<CardIDData CardID="3490130" CardName="[LR] Eternal Summer Maiden Izanami"/>
+<CardIDData CardID="3490140" CardName="[LR] Storm of the Great Sea Vepar"/>
+<CardIDData CardID="3490150" CardName="[LR] Angel of the Bottomless Pit Abaddon Omega"/>
+<CardIDData CardID="3490160" CardName="[LR] FM Demise Dragon Death"/>
+<CardIDData CardID="3490170" CardName="[LR] The Unsolved Mystery Detective Mimoza"/>
+<CardIDData CardID="3490180" CardName="[LR] Sacred Night Festival Beleth"/>
+<CardIDData CardID="3490190" CardName="[LR] Seductive Murderous Demon Baal Berith"/>
+<CardIDData CardID="3490200" CardName="[LR] Time-seeing Archdemon of Laziness Astaroth Omega"/>
+<CardIDData CardID="3490210" CardName="[LR] Awakened Fallen Satan Omega"/>
+<CardIDData CardID="3490220" CardName="[LR] Sweet Party Girl Lucifer"/>
+<CardIDData CardID="3490230" CardName="[LR] Priestess of Dark Calamities Kalaratri"/>
+<CardIDData CardID="3490240" CardName="[LR] Black Sun of the Darkness Alsiel"/>
+<CardIDData CardID="3490250" CardName="[LR] Raging Lord of the Earth Amaymon"/>
+<CardIDData CardID="3490260" CardName="[LR] Evil betrayer Namuci"/>
+<CardIDData CardID="3490270" CardName="[LR] The demon of temptation Mephistopheles Omega"/>
+<CardIDData CardID="3490290" CardName="[LR] Destroying Mad Warrior Ravana"/>
+<CardIDData CardID="3490300" CardName="[LR] Demon Queen of Scorching Wind Pazuzu Ω"/>
+<CardIDData CardID="3490310" CardName="[LR] Night Party trickster Will-o'-the-wispΩ"/>
+<CardIDData CardID="3500001" CardName="[GR] Horned Beast Taurus"/>
+<CardIDData CardID="3500101" CardName="[GR] Crustacean Zodiac Cancer"/>
+<CardIDData CardID="3500201" CardName="[GR] Dragon Knight Mordred"/>
+<CardIDData CardID="3500301" CardName="[GR] Jeweled Jug Aquarius"/>
+<CardIDData CardID="3590001" CardName="[GR] Stinging Tail Scorpion"/>
+<CardIDData CardID="3590101" CardName="[GR] The Two Fishes Pisces"/>
+<CardIDData CardID="3590201" CardName="[GR] Herotek Beowulf"/>
+<CardIDData CardID="3790020" CardName="[SLR] Hell Dragon of Six Hades Falak"/>
+<CardIDData CardID="3790030" CardName="[SLR] FM Superior Sloth Dragon Fool"/>
+<CardIDData CardID="3790040" CardName="[SLR] FM Superior Hidden Dragon Hermit"/>
+<CardIDData CardID="3790050" CardName="[SLR] FM Superior Demise Dragon Death"/>
+<CardIDData CardID="3790070" CardName="[SLR] Merciless Slaughterer Diablos Ω"/>
+</CardIDList>

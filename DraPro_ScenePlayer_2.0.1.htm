@@ -1,0 +1,713 @@
+<html>
+<head>
+	<meta charset=UTF-8" />
+	<title>DraPro Scene Player</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			max-width: 850px;
+		}
+		
+		h1 {
+			font-size: 1.5em;
+		}
+		
+		h2 {
+			font-size: 1em;
+		}
+		
+		h2 span.smallerText {
+			font-size: 0.8em;
+		}
+
+		div {
+			margin: 5px;
+		}
+
+		input {
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+
+		button {
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+
+		.dropDiv {
+			border: 2px dashed #ccc;
+			border-radius: 10px;
+			width: 400px;
+			font-family: sans-serif;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		.dropDiv.highlight {
+			border-color: #800080;
+			background-color: #80008017;
+		}
+
+		#fileElem {
+			display: none;
+		}
+
+		#xmlElem {
+			display: none;
+		}
+
+		.buttonFile {
+			display: inline-block;
+			padding: 10px;
+			background: #ccc;
+			cursor: pointer;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+		.buttonFile:hover {
+			background: #ddd;
+		}
+
+		/* Tooltip container */
+		.tooltip {
+			/*position: relative;
+			display: inline-block;*/
+			border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+		}
+
+		/* Tooltip text */
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			max-width: 200px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			padding: 5px;
+			border-radius: 6px;
+
+			/* Position the tooltip text */
+			position: absolute;
+			z-index: 1;
+		}
+
+		/* Show the tooltip text when you mouse over the tooltip container */
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+		}
+
+		.fading {
+			color: red;
+			-webkit-animation: fadeinout 1s linear forwards;
+			animation: fadeinout 1s linear forwards;
+		}
+
+		@-webkit-keyframes fadeinout {
+			0%,100% { opacity: 0; }
+			50% { opacity: 1; }
+		}
+
+		@keyframes fadeinout {
+			0%,100% { opacity: 0; }
+			50% { opacity: 1; }
+		}
+		
+		#animDiv {
+			position: relative;
+			width: 834px;
+			height: 640px;
+			border-width: 1px;
+			border-style: solid;
+		}
+		
+		canvas#animCanvas {
+			position: absolute;
+			top 0;
+			left: 0;
+			padding: 0;
+			margin: 0;
+			display: block;
+			visibility: hidden;
+			z-index: 1;
+		}
+		
+		#imageBg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 834;
+			max-height: 640;
+			visibility: hidden;
+			z-index: 2;
+		}
+		
+		#charaMiddle {
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 834;
+			max-height: 640;
+			visibility: hidden;
+			z-index: 3;
+		}
+		
+		#flashOut {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			max-width: 834px;
+			max-height: 640px;
+			width: 100%;
+			height: 100%;
+			visibility: hidden;
+			z-index: 4;
+		}
+		
+		.onFlashOut {
+			-webkit-animation: onFlashOutKF 50ms linear forwards;
+			animation: onFlashOutKF 50ms linear forwards;
+		}
+		
+		@-webkit-keyframes onFlashOutKF {
+			0% { opacity: 0; }
+			100% { opacity: 1; }
+		}
+
+		@keyframes onFlashOutKF {
+			0% { opacity: 0; }
+			100% { opacity: 1; }
+		}
+		
+		.offFlashOut {
+			-webkit-animation: offFlashOutKF 50ms linear forwards;
+			animation: offFlashOutKF 50ms linear forwards;
+		}
+		
+		@-webkit-keyframes offFlashOutKF {
+			0% { opacity: 1; }
+			100% { opacity: 0; }
+		}
+
+		@keyframes offFlashOutKF {
+			0% { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		
+		#dialogBox {
+			background-color: #666699;
+		}
+		
+		#charaName, #dialog {
+			border-width: 1px;
+			border-color: #000000;
+			border-style: solid;
+			min-height: 20px;
+			color: #ffffaa;
+			margin: 0px;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1 align='center'>Dragon Providence H Scene player v2.0.1</h1>
+	<h2 align='center'>by Noli <span class="smallerText">(click-to-advance by Pimgd)</span></h2>
+	<div id='animDiv' onclick='nextIfEnabled()'>
+		<canvas id='animCanvas' width='100' height='100'></canvas>
+		<img id='imageBg'>
+		<img id='charaMiddle'>
+	</div>
+	<div id='audioDiv'></div>
+	<div id='dialogBox'>
+		<p id='charaName'></p>
+		<p id='dialog'></p>
+	</div>
+	<div>
+		<label class='tooltip' title='How many milliseconds to wait per character, 300ms seconds are added to the total. Set to -1 to disable.
+(Default value: 80)'>Text wait:<input id='textWait' type='number' min='-1' max='500' value='80'></label>
+		<label class='tooltip' title='Only SR and above have voices'>Voices:<input type='checkbox' id='cbVoices'></label>
+		<label class='tooltip' title='Some animations have a 1 pixel offset on some frames causing a slight shaking when played.
+Leave this unchecked if you are unsure.'>Fix animation: <input type='checkbox' id='cbFixAnim'></label>
+		<label class='tooltip' title='Enables clicking on the image to go to the next line. Only skips text-waits right now.'>Enable click to advance: <input type='checkbox' id='cbEnableClickToNextLine'></label>
+	</div>
+	<div id='cardSelect'>
+		<label>
+			<span class='tooltip' title='If you loaded an XML with card IDs, start typing a name (or rarity, or ID) to find a card, then select the card in the list to put the ID in the field.
+Clear the field to start a new search.
+
+Otherwise, you can type an ID directly.
+Format: TRxxxxx, where:
+	T = Type (1=Beast, 2=God, 3=Demon)
+	R = Rarity (0=N, 1=R, 2=SR, 3=SSR, 4=LR, 5=GR, 6= SGR, 7=SLR)
+	xxxxx = various digits depending on the card
+	The last digit is always 0 except for GR cards where the last 2 digits are 01.
+
+Note: Remember that only R and above have scenes.'>Card ID: </span>
+			<input id='inputCardId' list='cardIDList' type='text' value='' onfocus='this.value=""'>
+			<datalist name='cardIDList' id='cardIDList'>
+			<!-- Example of IDs that will be added from loading an XML file
+			<option value='1400070'>[LR]Impenitent Sinner Sodom and Gomorrah</option>
+			 -->
+			</datalist>
+		</label>
+		<button type='button' onclick='loadStoryById(1, "a")'>Scene 1</button>
+		<button type='button' onclick='loadStoryById(2, "a")'>Scene 2</button>
+		<button type='button' onclick='loadStoryById(3, "a")'>Scene 3</button>
+		<br>
+		<div class='dropDiv' id='xmlArea'>
+			<p>Load an XML file with ID with the file dialog, or by dragging and dropping the file onto this area.</p>
+			<label class='buttonFile'>Load XML file with card IDs<input type='file' id='xmlElem' accept='.xml' onchange='loadXml(this.files)'></label>
+		</div>
+	</div>
+</body>
+
+<script>
+// Global variables
+var animSheet = new Image();
+var currentFrame = 0;
+var numberOfFrames;
+var context2d;
+var fps;
+var animWidth;
+var animHeight;
+var idRequest = 0;
+var idTimeout = 0;
+var animeimagePath = "./cdn00.drapro-nutaku.dmmgames.com/static/adv/data/pnovel/animeimage";
+
+//////////////
+// Story
+var fgimagePath =	"./cdn00.drapro-nutaku.dmmgames.com/static/adv/data/pnovel/fgimage";
+var adultPath =	"./cdn00.drapro-nutaku.dmmgames.com/static/adv/dest/adult";
+var bgPath =	"./cdn00.drapro-nutaku.dmmgames.com/static/adv/data/pnovel/bgimage";
+var voicePath = "./cdn00.drapro-nutaku.dmmgames.com/static/adv/data/pnovel/sound";
+var currentScene;
+var currentType;
+var flashOutDiv = undefined;
+// Tricks to load JS
+var $ = {};
+$.extend = function(a, b) { return b };
+var config;
+var injectedScriptElement;
+//
+
+window.onload = function() {
+	init();
+}
+
+function init() {
+	fps = 0;
+	currentScene = 0;
+	currentType = "a";
+	context2d = document.getElementById('animCanvas').getContext('2d');
+	document.getElementById('dialog').innerHTML = "-- No scene playing --";
+
+	// For dropping an XML file
+	let dropArea = document.getElementById('xmlArea');
+	dropArea.addEventListener('dragenter', dropHandlerFunction, false);
+	dropArea.addEventListener('dragleave', dropHandlerFunction, false);
+	dropArea.addEventListener('dragover', dropHandlerFunction, false);
+	dropArea.addEventListener('drop', dropXmlHandler, false);
+
+	// Listener when a sheet is loaded
+	animSheet.addEventListener("load", sheetLoaded);
+}
+
+function loadXml(files) {
+	var file = files[0];
+
+	if (file.name.match(/\.xml$/)) {
+		var reader = new FileReader();
+		reader.readAsText(file);
+		reader.onload = function() {
+			var parser = new DOMParser();
+			var xmlDoc = parser.parseFromString(reader.result,"text/html");
+			//
+			var cardListElement = document.getElementById("cardIDList");
+			var htmlToInsert = "";
+			var cardDataList = xmlDoc.getElementsByTagName("CardIDData");
+			for(var indexCard = 0; indexCard < cardDataList.length; indexCard++) {
+				htmlToInsert += "<option value='" + cardDataList[indexCard].getAttribute("CardID") + "'>" + cardDataList[indexCard].getAttribute("CardName") + "</option>";
+			}
+			cardListElement.innerHTML = htmlToInsert;
+			let xmlArea = document.getElementById('xmlArea');
+			let newNode = document.createElement("span");
+			newNode.setAttribute('class', 'fading');
+			newNode.setAttribute('id', 'xmlLoadedFading');
+			newNode.appendChild(document.createTextNode("XML Loaded"));
+			xmlArea.appendChild(newNode);
+			setTimeout( function() {
+				let elemToRemove = document.getElementById('xmlLoadedFading');
+				elemToRemove.parentNode.removeChild(elemToRemove);
+			}, 1000);
+		};
+	} else {
+		let xmlArea = document.getElementById('xmlArea');
+			let newNode = document.createElement("span");
+			newNode.setAttribute('class', 'fading');
+			newNode.setAttribute('id', 'xmlLoadedFading');
+			newNode.appendChild(document.createTextNode("Invalid file"));
+			xmlArea.appendChild(newNode);
+			setTimeout( function() {
+				let elemToRemove = document.getElementById('xmlLoadedFading');
+				elemToRemove.parentNode.removeChild(elemToRemove);
+			}, 1000);
+	}
+}
+
+function dropHandlerFunction(e) {
+	e.preventDefault();
+	e.stopPropagation();
+
+	if(e.type == 'dragover' || e.type == 'dragenter') {
+		e.currentTarget.classList.add('highlight');
+	} else if(e.type == 'dragleave' || e.type == 'drop') {
+		e.currentTarget.classList.remove('highlight');
+	}
+}
+
+function dropXmlHandler(e) {
+	e.preventDefault();
+	e.stopPropagation();
+	e.currentTarget.classList.remove('highlight');
+	loadXml(e.dataTransfer.files);
+}
+
+function loadStoryById(pSceneId, pType) {
+	let cardId = document.getElementById('inputCardId').value;
+	
+	currentScene = pSceneId;
+	currentType = pType;
+	
+	stopCurrentAnimation();
+	injectedScriptElement = document.createElement('script');
+	injectedScriptElement.charset = "UTF-8";
+	injectedScriptElement.addEventListener("load", onStoryLoaded, false);
+	injectedScriptElement.src = adultPath + "/pnovel.config_" + cardId + "_" + pSceneId + "_" + pType + ".js";
+	document.documentElement.prepend(injectedScriptElement);
+}
+
+function nextIfEnabled() {
+	if (document.getElementById("cbEnableClickToNextLine").checked) {
+		if (setTextSleepPromise != null) {
+			setTextSleepPromise.resolveEarly();
+			setTextSleepPromise = null;
+		}
+	}
+}
+
+let setTextSleepPromise = null;
+
+async function onStoryLoaded() {
+
+// TODO
+// - Improve non-H story support (so we can eventually play MainStory scenarios):
+//   * Support multiple characters
+//   * Character animations (vibes,jump,etc)
+//   * Better positioning of images for non-scene stories
+// - Make this function truely async (use requestAnimationFrame and setTimeout?)
+// - use original files from the game for more accurate rendering?
+//   * cdn00.drapro-nutaku.dmmgames.com/static/front/css/pnovel.css
+//   * cdn00.drapro-nutaku.dmmgames.com/static/front/css/pnovel.animate.css from 
+//   * cdn00.drapro-nutaku.dmmgames.com/static/adv/dest/pnovel.configBase.js
+//   * cdn00.drapro-nutaku.dmmgames.com/static/front/js/dest/lib/pnovel.js
+// - allow to stop current scene, behaviour is undefined if we start another scene while one is played
+// - there may be a white screen between 2 MV (the first one is hidden, and the next needs some time to load)
+
+	injectedScriptElement.parentElement.removeChild(injectedScriptElement);	// Remove the script
+	let currentScenario = config.scenario[config.scenario.current];
+	for (let indexScenario = 0; indexScenario < currentScenario.length; indexScenario++) {
+		let cmd = currentScenario[indexScenario];
+		let imageChara;
+		let timeFlash;
+		
+		switch (cmd.cmd) {
+			case "pg":
+			case "loadVoice":
+				console.log("Ignored cmd: " + cmd.cmd);
+				break;
+
+			case "peroperostart":
+				console.log("Cmd: " + cmd.cmd);
+				// Deactivation/hiding of all elements
+				removeAllAudio();
+				stopCurrentAnimation();
+				document.getElementById('animCanvas').style.visibility = "hidden";
+				document.getElementById('imageBg').style.visibility = "hidden";
+				document.getElementById('charaMiddle').style.visibility = "hidden";
+				document.getElementById('charaName').innerHTML = "";
+				document.getElementById('dialog').innerHTML = "";
+				break;
+				
+			case "showBG":	// TODO Black background is very big and is resized weirdly
+				console.log("** WIP ** " + cmd.cmd);
+				//
+				let imageBg = document.getElementById('imageBg');
+				imageBg.src = bgPath + "/" + cmd.value + ".jpg";
+				imageBg.style.visibility = "visible";
+				break;
+				
+			case "ShowChara":	// TODO Support for multiple characters on screen
+				console.log("** WIP ** " + cmd.cmd);
+				//console.log(cmd);
+				//
+				// Sometimes, hideMV is not called
+				stopCurrentAnimation();
+				document.getElementById('animCanvas').style.visibility = "hidden";
+				//
+				imageChara = document.getElementById('charaMiddle');
+				imageChara.src = fgimagePath + "/" + config.chara[cmd.value].path + config.chara[cmd.value].src.body;
+				imageChara.style.visibility = "visible";
+				break;
+				
+			case "HideChara":	// TODO Support for multiple characters and hide the one given in the command
+				console.log("** WIP ** " + cmd.cmd);
+				//console.log(cmd);
+				//
+				imageChara = document.getElementById('charaMiddle');
+				imageChara.style.visibility = "hidden";
+				break;
+				
+			case "changeCharaBody":	// TODO Support for multiple characters on screen
+				console.log("** WIP ** " + cmd.cmd);
+				//console.log(cmd);
+				//
+				imageChara = document.getElementById('charaMiddle');
+				imageChara.src = fgimagePath + "/" + config.chara[cmd.value].path + config.chara[cmd.value].src.parts.body.type[cmd.opt.type].src;
+				imageChara.style.visibility = "visible";
+				break;
+				
+			case "talk_char":
+				console.log("Cmd: " + cmd.cmd);
+				document.getElementById('charaName').innerHTML = config.chara[cmd.value].name_j;
+				// Empty dialog when changing talking chara
+				document.getElementById('dialog').innerHTML = "";
+				break;
+			
+			case "setText":
+				console.log("** WIP ** " + cmd.cmd);
+				let textToPrint = cmd.value;
+				if (textToPrint.lastIndexOf("[pg]") >= 0) {
+					textToPrint = textToPrint.substring(0, textToPrint.lastIndexOf("[pg]"));	// Remove [pg]
+				}
+				document.getElementById('dialog').innerHTML = textToPrint;
+				//
+				let textWait = document.getElementById('textWait').value;
+				if (textWait == -1) {
+					textWait = 999999;
+				}
+				let waitingFor = sleep(300 + textToPrint.length*textWait);
+				setTextSleepPromise = waitingFor;
+				await waitingFor;
+				setTextSleepPromise = null;
+				break;
+			
+			case "showMV":
+				console.log("Cmd: " + cmd.cmd);
+				stopCurrentAnimation();
+				let speed;
+				if (cmd.opt.speed = "slow") {	// TODO This is actually more complicated, see playMovie in pnovel.js
+					setFps(16);
+					speed = "16fps";
+				} else {
+					setFps(24);
+					speed = "24fps";
+				}
+				// Force _pc, this is how it's done in game
+				let sheetPath = animeimagePath + "/" + config.info.anime[cmd.value][speed];
+				sheetPath = sheetPath.substring(0, sheetPath.lastIndexOf(".")) + "_pc" + sheetPath.substring(sheetPath.lastIndexOf("."));
+				animSheet.src = sheetPath;
+				break;
+				
+			case "hideMV":
+				console.log("Cmd: " + cmd.cmd);
+				stopCurrentAnimation();
+				document.getElementById('animCanvas').style.visibility = "hidden";
+				//
+			//	context2d.resetTransform();	// Might be needed if we want later commands to draw in the right place
+				break;
+
+			case "playVoice":
+				console.log("Cmd: " + cmd.cmd);
+				//console.log(cmd);
+				//
+				removeAllAudio();
+				if (document.getElementById('cbVoices').checked) {
+					let audioDiv = document.getElementById('audioDiv');
+					let newAudio = document.createElement('audio');
+					newAudio.autoplay = true;
+					let newSourceAac = document.createElement('source');
+					newSourceAac.src = voicePath + "/" + cmd.value + ".aac";
+					newSourceAac.type = "audio/aac";
+					let newSourceOog = document.createElement('source');
+					newSourceOog.src = voicePath + "/" + cmd.value + ".ogg";
+					newSourceOog.type = "audio/ogg";
+					newAudio.appendChild(newSourceAac);
+					newAudio.appendChild(newSourceOog);
+					newAudio.innerHTML += "Your browser does not support the audio element.";
+					audioDiv.appendChild(newAudio);
+					/*
+					<audio>
+						<source src="xxx.ogg" type="audio/ogg">
+						<source src="xxx.aac" type="audio/aac">
+						Your browser does not support the audio element.
+					</audio>
+					*/
+				}
+				break;
+				
+			case "onWhiteOut": // See pnovel.js
+				console.log("Cmd: " + cmd.cmd);
+				console.log(cmd);
+				//
+				timeFlash = cmd.value ? cmd.value : 500;
+				if (flashOutDiv !== undefined) {
+					flashOutDiv.parentElement.removeChild(flashOutDiv);
+					flashOutDiv = undefined;
+				}
+				flashOutDiv = document.createElement('div');
+				flashOutDiv.id = "flashOut";
+				flashOutDiv.style.backgroundColor = "white";
+				flashOutDiv.classList.add('onFlashOut');
+				flashOutDiv.style.WebkitAnimationDuration = timeFlash + "ms";
+				flashOutDiv.style.animationDuration = timeFlash + "ms";
+				flashOutDiv.style.visibility = "visible";
+				document.getElementById('animDiv').appendChild(flashOutDiv);
+				await sleep(timeFlash);
+				break;
+				
+			case "offWhiteOut": // See pnovel.js
+				console.log("Cmd: " + cmd.cmd);
+				//console.log(cmd);
+				//
+				if (flashOutDiv === undefined) {
+					flashOutDiv = document.createElement('div');
+					flashOutDiv.id = "flashOut";
+					flashOutDiv.style.backgroundColor = "white";
+				}
+				//
+				timeFlash = cmd.value ? cmd.value : 500;
+				flashOutDiv.classList.remove('onFlashOut');
+				flashOutDiv.classList.add('offFlashOut');
+				flashOutDiv.style.WebkitAnimationDuration = timeFlash + "ms";  // Code for Chrome, Safari, and Opera
+				flashOutDiv.style.animationDuration = timeFlash + "ms";
+				await sleep(timeFlash);
+				flashOutDiv.parentElement.removeChild(flashOutDiv);
+				flashOutDiv = undefined;
+				break;
+				
+			case "end":
+				console.log("Cmd: " + cmd.cmd);
+				//
+				stopCurrentAnimation();	// For safety
+				// Hide all images
+				document.getElementById('animCanvas').style.visibility = "hidden";
+				document.getElementById('imageBg').style.visibility = "hidden";
+				document.getElementById('charaMiddle').style.visibility = "hidden";
+				// Empty dialog and chara name
+				document.getElementById('charaName').innerHTML = "";
+				document.getElementById('dialog').innerHTML = "-- No scene playing --";
+				// Load _h scene after _a
+				if (currentType == "a") {
+					loadStoryById(currentScene, "h");
+				}
+				break;
+				
+			default:
+				console.log("** cmd to implement ** " + cmd.cmd);
+				console.log(cmd);
+				break;
+		}
+	}
+}
+
+function removeAllAudio() {
+	while (document.getElementsByTagName('audio').length > 0) {
+		let audioEl = document.getElementsByTagName('audio')[0];
+		audioEl.parentElement.removeChild(audioEl);
+	}
+}
+
+function stopCurrentAnimation() {
+	// Stop animation
+	if (idTimeout != 0) {
+		clearTimeout(idTimeout);
+		idTimeout = 0;
+	}
+	if (idRequest != 0) {
+		cancelAnimationFrame(idRequest);
+		idRequest = 0;
+	}
+	fps = 0;
+}
+
+function sheetLoaded() {
+	let hires = (animSheet.height===834);
+	animWidth = animSheet.height;
+	animHeight = 640;	// Hires animation
+	if (!hires) {
+		animHeight=320;	// Lowres animation
+	}
+	numberOfFrames = (animSheet.width/animHeight);
+	currentFrame = 0;
+
+	let canvasAnim = document.getElementById('animCanvas');
+	canvasAnim.width = animWidth;
+	canvasAnim.height = animHeight;
+	
+	context2d.rotate(-Math.PI/2);
+	context2d.drawImage(animSheet, -animHeight, 0);	// Draw first frame
+	
+	canvasAnim.style.visibility = "visible"; // Make visible
+	document.getElementById('imageBg').style.visibility = "hidden"; // Hide bg
+	document.getElementById('charaMiddle').style.visibility = "hidden"; // Hide chara
+
+	requestAnimationFrame(updateAnim);
+}
+
+function setFps(newFps) {
+	var oldFps = fps;
+	fps = newFps;
+
+	if (oldFps == 0 && idTimeout == 0 && idRequest == 0 && fps != 0) {
+		requestAnimationFrame(updateAnim);
+	}
+}
+
+function updateAnim(timestamp) {
+	if(fps>0) {
+		idTimeout = setTimeout( function() {
+			idRequest = requestAnimationFrame(updateAnim);
+			currentFrame++;
+			currentFrame = currentFrame % numberOfFrames;
+			if (! document.getElementById("cbFixAnim").checked) {
+				context2d.drawImage(animSheet, -animHeight*(currentFrame+1), 0);
+			} else {
+				if(currentFrame < 15) {
+					context2d.drawImage(animSheet, -animHeight*(currentFrame+1), 0);
+				} else if(currentFrame == 15) {
+					// Draw this frame one line lower (it's missing the top line)
+					context2d.drawImage(animSheet, animHeight*currentFrame-1, 0, animHeight, animWidth, -animHeight-1, 0, animHeight, animWidth);
+				} else {
+					// Draw with an offset of 1 pixel to compensate for the missing line on frame 15
+					context2d.drawImage(animSheet, -animHeight*(currentFrame+1)+1, 0);
+				}
+			}
+		}, 1000/fps);
+	} else {
+		stopCurrentAnimation();
+	}
+}
+
+// Usage: calling function must be async, and call "await sleep(millis);"
+function sleep(ms) {
+  let resolver = function(){};
+  let canceler = function(){};
+  let promise = new Promise((resolve, reject) => { resolver = resolve; canceler = reject; });
+  let timeoutHandler = setTimeout(resolver, ms);
+  promise.cancel = function(){ clearTimeout(timeoutHandler); canceler(); };
+  promise.resolveEarly = function(){ clearTimeout(timeoutHandler); resolver(); };
+  return promise;
+}
+
+</script>
+
+</html>
